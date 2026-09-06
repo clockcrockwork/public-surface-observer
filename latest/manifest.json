@@ -1,7 +1,3283 @@
 {
   "schema_version": 1,
-  "observed_at": null,
-  "status": "NO_MANAGED_OBSERVATION_YET",
+  "observed_at": "2026-09-06T04:09:28.500Z",
+  "registry_schema_version": 1,
+  "registry_commit_sha": "cf59d92ac946d96894bbdd56c433bc9607cc5705",
   "runner": "public-surface-observer",
-  "targets": []
+  "browser_version": "141.0.7390.37",
+  "recommendation_retry_budget": {
+    "total": 4,
+    "remaining": 4,
+    "max_attempts_per_target": 2
+  },
+  "status": "OK",
+  "seed_count": 2,
+  "target_count": 11,
+  "seed_reports": [
+    {
+      "seed_id": "primary-note",
+      "discovery_status": "OK",
+      "discovered_now_count": 9
+    },
+    {
+      "seed_id": "primary-booth",
+      "discovery_status": "OK",
+      "discovered_now_count": 0
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "note-creator",
+      "service": "note",
+      "page_type": "creator",
+      "public_id": null,
+      "discovery_presence": "SEED",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": null,
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-n9c784c2644e7",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "n9c784c2644e7",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": false,
+        "items": [
+          {
+            "rank": 1,
+            "title": "会社員がChatGPTに入れてはいけない情報7選｜そのコピペ、本当に大丈夫？【第8章】",
+            "url": "https://note.com/ai_gyomukaikaku/n/naed58dbdf274",
+            "creator_name": "仕事を減らす研究所｜AI×業務改革",
+            "creator_url": "https://note.com/ai_gyomukaikaku",
+            "price": null,
+            "like_count": 22
+          },
+          {
+            "rank": 2,
+            "title": "ChatGPTに個人情報・会社情報、どこまで入れていい？｜入力前に確認したい情報の分け方【2026年8月版】",
+            "url": "https://note.com/calm_dove4104/n/n0f12e1b1f747",
+            "creator_name": "こまりごと商店",
+            "creator_url": "https://note.com/calm_dove4104",
+            "price": "¥300",
+            "like_count": null
+          },
+          {
+            "rank": 3,
+            "title": "AIに社内資料を貼る前に、「名前だけ消した」で安心しない。Copilot・ChatGPTで確認したい5つの残り情報",
+            "url": "https://note.com/yuki_ai_guide/n/na99e74685139",
+            "creator_name": "Yuki｜AI実務ガイド",
+            "creator_url": "https://note.com/yuki_ai_guide",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 4,
+            "title": "会社員がChatGPTに入力してはいけない情報｜安全な置き換え例つき",
+            "url": "https://note.com/deft_serval2219/n/nf39923a1fd8a",
+            "creator_name": "しょうのAI研究所｜ChatGPT仕事術",
+            "creator_url": "https://note.com/deft_serval2219",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 5,
+            "title": "会社の情報、どこまでAIに入れていい？初心者向け「入力前チェック」",
+            "url": "https://note.com/aishiteru88/n/ncb20e03fcb75",
+            "creator_name": "エーアイシテル｜会社員のAI仕事術",
+            "creator_url": "https://note.com/aishiteru88",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 6,
+            "title": "ChatGPTに仕事の情報をどこまで書いていい？｜相談前に確認したい5つのこと",
+            "url": "https://note.com/aoponzu1031/n/n117770420915",
+            "creator_name": "工場勤務、ちょっと楽したい",
+            "creator_url": "https://note.com/aoponzu1031",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 7,
+            "title": "ChatGPTの回答、どこまで信用していい？初心者が確認した方がいい5つのこと",
+            "url": "https://note.com/aiteam_log/n/n1998d533cebc",
+            "creator_name": "AIチーム実録｜現場の人",
+            "creator_url": "https://note.com/aiteam_log",
+            "price": null,
+            "like_count": 6
+          },
+          {
+            "rank": 8,
+            "title": "ChatGPTに個人情報を入れないための置き換えルール｜仕事で使う前の確認表",
+            "url": "https://note.com/mute_crane1853/n/n8542e1ec0d2d",
+            "creator_name": "高木偶素",
+            "creator_url": "https://note.com/mute_crane1853",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 9,
+            "title": "AIに、私はどこまでの情報を教えてる？",
+            "url": "https://note.com/hitori_sanbou/n/n0ad08e73a769",
+            "creator_name": "AI参謀｜ひとり社長のAI活用",
+            "creator_url": "https://note.com/hitori_sanbou",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 10,
+            "title": "ChatGPTに個人情報や社内資料を入れて大丈夫？仕事で使う前の5つの確認",
+            "url": "https://note.com/kaiketunote/n/nb855acb0c308",
+            "creator_name": "kaiketunote",
+            "creator_url": "https://note.com/kaiketunote",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 11,
+            "title": "AIに個人情報、どこまで入れる？まず隠す3つ",
+            "url": "https://note.com/toya_money/n/nca6556edd5ba",
+            "creator_name": "AI×お金 | Toya",
+            "creator_url": "https://note.com/toya_money",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 12,
+            "title": "AIに入力した文章は学習される？「学習・保存・参照」の違いを初心者向けに整理",
+            "url": "https://note.com/around30monolog/n/nf10e0cbb4957",
+            "creator_name": "トシ@IT&AIを初心者にもわかりやすく",
+            "creator_url": "https://note.com/around30monolog",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 13,
+            "title": "会社の情報をChatGPTに入れて大丈夫？ ChatGPT・Claude・Geminiを「学習・保存・人間レビュー・管理機能」で公式情報だけから比較【2026年8月版】",
+            "url": "https://note.com/rapid_dog1534/n/n34d1f2c82d8a",
+            "creator_name": "インターネット調査室",
+            "creator_url": "https://note.com/rapid_dog1534",
+            "price": null,
+            "like_count": 7
+          },
+          {
+            "rank": 14,
+            "title": "その情報、AIに貼って大丈夫？会社員が入力前に止めたい5つの情報",
+            "url": "https://note.com/benrikobo/n/nc7632f5bd70c",
+            "creator_name": "ずっと四苦hack｜便利工房ラボ",
+            "creator_url": "https://note.com/benrikobo",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 15,
+            "title": "ChatGPTに入力してはいけない情報は？仕事で使う前に知っておきたい境界線",
+            "url": "https://note.com/imashirube/n/n2f890e75c66d",
+            "creator_name": "イマシルベ｜今を知って、得をしよう。",
+            "creator_url": "https://note.com/imashirube",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 16,
+            "title": "会社の情報をChatGPTに入れていいのか。確認すべき3つのこと【2026年8月版】 ",
+            "url": "https://note.com/ai_50dai/n/ne42aa7df981b",
+            "creator_name": "50代からのAI｜今さら聞けない使い方",
+            "creator_url": "https://note.com/ai_50dai",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 17,
+            "title": "会社の仕事でChatGPTを使う前に確認したいこと｜個人利用・社内ルール・相談の順番を決めるチェックリスト",
+            "url": "https://note.com/gay_walrus2233/n/nb9c586c2b8bf",
+            "creator_name": "naoさん",
+            "creator_url": "https://note.com/gay_walrus2233",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 18,
+            "title": "職場の文章をAIに貼る前に｜消す・置き換える情報チェックリスト",
+            "url": "https://note.com/ai_honyaku_note/n/nfc14ac1fb4b9",
+            "creator_name": "心理士のやさしいAI翻訳帳",
+            "creator_url": "https://note.com/ai_honyaku_note",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 19,
+            "title": "ChatGPTの回答、どこまで信じる？｜仕事で使う前の「4点確認」",
+            "url": "https://note.com/matsuda_at/n/n10ff25a6cc3a",
+            "creator_name": "mATsuda",
+            "creator_url": "https://note.com/matsuda_at",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 20,
+            "title": "AIチャットに入力していい情報・NGな情報の見極め方",
+            "url": "https://note.com/hamster_hakase/n/n45a3fa216880",
+            "creator_name": "ハムスター博士",
+            "creator_url": "https://note.com/hamster_hakase",
+            "price": "¥300",
+            "like_count": 1
+          },
+          {
+            "rank": 21,
+            "title": "AIに個人情報や社内情報を入れていいの？初心者が気をつけたいこと",
+            "url": "https://note.com/ai_katsuyo_lab/n/n059a965ea5d4",
+            "creator_name": "AI活用ラボ",
+            "creator_url": "https://note.com/ai_katsuyo_lab",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 22,
+            "title": "AIに何を書いてはいけないのか。3社の公式方針で線を引く",
+            "url": "https://note.com/cool_hippo3791/n/nd9ec0923980b",
+            "creator_name": "riork｜AIの最新情報と使い方",
+            "creator_url": "https://note.com/cool_hippo3791",
+            "price": null,
+            "like_count": 6
+          },
+          {
+            "rank": 23,
+            "title": "AIに貼る前に30秒。消すべき情報7つ【会社員・副業向け】",
+            "url": "https://note.com/lucid_sedum4085/n/nd07142ed4a5c",
+            "creator_name": "ゆるーく生きる🔵🟡🔴",
+            "creator_url": "https://note.com/lucid_sedum4085",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 24,
+            "title": "AIプロンプトに個人情報を入れる前の確認3項目",
+            "url": "https://note.com/noa_notexai/n/n56fa24101ae1",
+            "creator_name": "ノア｜note×AI執筆ラボ",
+            "creator_url": "https://note.com/noa_notexai",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 25,
+            "title": "機密を伏せて相談する“ぼかし方”プロンプト",
+            "url": "https://note.com/charm_liger6066/n/n8771289e7c74",
+            "creator_name": "ijusts",
+            "creator_url": "https://note.com/charm_liger6066",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 26,
+            "title": "生成AIに社内資料を貼る前に｜4つの確認で「入力していい？」を整理する",
+            "url": "https://note.com/fit_snail9195/n/n370c5f81b242",
+            "creator_name": "wolf | AI研究機関",
+            "creator_url": "https://note.com/fit_snail9195",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 27,
+            "title": "「AIに入れた情報が学習されるのでは」——契約前に確認できることは、思ったより具体的です",
+            "url": "https://note.com/connect_ai_keiri/n/n0409476da479",
+            "creator_name": "connect｜AI×経理の専門家",
+            "creator_url": "https://note.com/connect_ai_keiri",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 28,
+            "title": "【保存版】生成AIの利用規約、全部読まなくていい――会社で使うなら確認したい5項目",
+            "url": "https://note.com/takayuki_sase/n/n8bc99da4be3a",
+            "creator_name": "Takayuki Sase",
+            "creator_url": "https://note.com/takayuki_sase",
+            "price": null,
+            "like_count": 15
+          },
+          {
+            "rank": 29,
+            "title": "その答え、本当に合ってる？ ChatGPTを使うときに自分で確認している5つのこと",
+            "url": "https://note.com/brainy_boar4702/n/nb4c392ba3357",
+            "creator_name": "スタジオONE-K",
+            "creator_url": "https://note.com/brainy_boar4702",
+            "price": "¥300",
+            "like_count": null
+          },
+          {
+            "rank": 30,
+            "title": "無料AI、どこまで話していい？ ChatGPTに広告が入ると聞いて",
+            "url": "https://note.com/shimaken_me/n/nd38a66a477ef",
+            "creator_name": "シマケン",
+            "creator_url": "https://note.com/shimaken_me",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 31,
+            "title": "ChatGPTに会社の情報を入れて大丈夫？「入力OK・匿名化・入力NG」を10秒で判断する実務ガイド【2026年版】",
+            "url": "https://note.com/menpa_lab/n/nc8e37ab5f0b0",
+            "creator_name": "メンパ生活研究所",
+            "creator_url": "https://note.com/menpa_lab",
+            "price": "¥980",
+            "like_count": 1
+          },
+          {
+            "rank": 32,
+            "title": "副業案件をAIに読ませる前に消している3つの情報",
+            "url": "https://note.com/oniki_oni/n/n5a3917592b9a",
+            "creator_name": "脱・社畜アナリティクス",
+            "creator_url": "https://note.com/oniki_oni",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 33,
+            "title": "会議メモをAIに渡す前に、置き換えられる情報を見ておく",
+            "url": "https://note.com/juicy_willet9526/n/ncc9ae8b1ca4a",
+            "creator_name": "aoi｜会議後のAI整理",
+            "creator_url": "https://note.com/juicy_willet9526",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 34,
+            "title": "AIに仕事の情報を渡していいか分からなかった僕が、実際に引いた3つの線",
+            "url": "https://note.com/toru_ai_side/n/n2fa1d215d2cb",
+            "creator_name": "とる｜Claude Codeで楽する副業",
+            "creator_url": "https://note.com/toru_ai_side",
+            "price": null,
+            "like_count": 6
+          },
+          {
+            "rank": 35,
+            "title": "なぜ顧客情報をそのままChatGPTに貼ると、後で取り返せないのか",
+            "url": "https://note.com/ai_income_work/n/n63f6fbcfd217",
+            "creator_name": "働く人のAI実務ノート | AIで成果を増やして、評価と収入を上げる",
+            "creator_url": "https://note.com/ai_income_work",
+            "price": null,
+            "like_count": 10
+          },
+          {
+            "rank": 36,
+            "title": "技術おたくのままプロダクトエンジニアになる",
+            "url": "https://note.com/udzura/n/ne5653dc1b432",
+            "creator_name": "Uchio Kondo",
+            "creator_url": "https://note.com/udzura",
+            "price": null,
+            "like_count": 92
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-nfff4b16b3d21",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "nfff4b16b3d21",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": false,
+        "items": [
+          {
+            "rank": 1,
+            "title": "作った人こそ、自分で使う。仕様書だけでは気づけない不便の見つけ方",
+            "url": "https://note.com/career_memo/n/n310e8bfbefe6",
+            "creator_name": "ぬんぬん",
+            "creator_url": "https://note.com/career_memo",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 2,
+            "title": "仕組みを整えたのに、なぜかうまく回らないことがある",
+            "url": "https://note.com/hikari_yumenote/n/n3d4b0cd324f3",
+            "creator_name": "ひかり",
+            "creator_url": "https://note.com/hikari_yumenote",
+            "price": null,
+            "like_count": 5
+          },
+          {
+            "rank": 3,
+            "title": "Webデザイナーを目指す人へ*AI時代の実務教育を作ろうと思った日",
+            "url": "https://note.com/webdesign/n/nd06f991f6cad",
+            "creator_name": "Webのひと。",
+            "creator_url": "https://note.com/webdesign",
+            "price": null,
+            "like_count": 6
+          },
+          {
+            "rank": 4,
+            "title": "Web制作が上手くなるほど、自分を出さなくなった",
+            "url": "https://note.com/tkglabs/n/n8d41bb814330",
+            "creator_name": "TKG Labs",
+            "creator_url": "https://note.com/tkglabs",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 5,
+            "title": "「気づけば『投稿を作る』だけじゃなく、予約から支払いまで考えていた」",
+            "url": "https://note.com/nam_nam_nam/n/nbfeeaa3c47a6",
+            "creator_name": "なむ",
+            "creator_url": "https://note.com/nam_nam_nam",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 6,
+            "title": "高卒で働き始めて気づいた。「知っている」と「できる」は違った",
+            "url": "https://note.com/crisp_iris9058/n/nf3e44c82b397",
+            "creator_name": "いず＠みち",
+            "creator_url": "https://note.com/crisp_iris9058",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 7,
+            "title": "動物看護師だった私が、AIと開発して気づいたこと",
+            "url": "https://note.com/tender_lapo28/n/na559d85f21f0",
+            "creator_name": "ちゃーちゃん",
+            "creator_url": "https://note.com/tender_lapo28",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 8,
+            "title": "サービスを作るより、サービスを「ちゃんと動かす」方が難しい。",
+            "url": "https://note.com/sasaki_yuki_/n/n275d4bd78153",
+            "creator_name": "Yuki Sasaki",
+            "creator_url": "https://note.com/sasaki_yuki_",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 9,
+            "title": "「太陽の光を浴びて働きたい」で美容師を辞めた私が、42歳でAIを使っている",
+            "url": "https://note.com/web_craft_77/n/n4a72804dae78",
+            "creator_name": "WEB CRAFT 77",
+            "creator_url": "https://note.com/web_craft_77",
+            "price": null,
+            "like_count": 11
+          },
+          {
+            "rank": 10,
+            "title": "未経験でITに入って監視運用を3年。身についたものと、身につかなかったもの",
+            "url": "https://note.com/knwg_s05/n/n5e7a5a73d626",
+            "creator_name": "こう｜元美容師11年→クラウドエンジニア",
+            "creator_url": "https://note.com/knwg_s05",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 11,
+            "title": "きれいなキャリアではないけれど20年間Webの現場で学んできたこと",
+            "url": "https://note.com/iinoo/n/n20b692aed227",
+            "creator_name": "iino",
+            "creator_url": "https://note.com/iinoo",
+            "price": null,
+            "like_count": 17
+          },
+          {
+            "rank": 12,
+            "title": "『勉強をしっかりすれば現場でも問題なく通用する』と思っていた自分へ",
+            "url": "https://note.com/rshadow_jp/n/nf7970fdea112",
+            "creator_name": "RShadow_JP",
+            "creator_url": "https://note.com/rshadow_jp",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 13,
+            "title": "DAY85｜仕組みを作った次に必要なのは、「ちゃんと回るか」を確かめること",
+            "url": "https://note.com/mogi0211/n/n82ebdc097f06",
+            "creator_name": "茂木 慎一",
+            "creator_url": "https://note.com/mogi0211",
+            "price": "¥100",
+            "like_count": null
+          },
+          {
+            "rank": 14,
+            "title": "デザインは、作る仕事ではなくなった。",
+            "url": "https://note.com/tamafactory/n/n4a338db8ccb2",
+            "creator_name": "HIDEKI TAMAI",
+            "creator_url": "https://note.com/tamafactory",
+            "price": null,
+            "like_count": 24
+          },
+          {
+            "rank": 15,
+            "title": "個人開発より、仕事で作ったほうが身につく",
+            "url": "https://note.com/dhythm/n/naf40af479330",
+            "creator_name": "Yuta Okada｜岡田雄太",
+            "creator_url": "https://note.com/dhythm",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 16,
+            "title": "クライアントが自分でモックアップをつくるようになって、考えたこと",
+            "url": "https://note.com/romusan_n26/n/nd459842253e8",
+            "creator_name": "ロムさん｜事業とブランド、その周辺",
+            "creator_url": "https://note.com/romusan_n26",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 17,
+            "title": "仕事が面白くなるのは、まるっとわかってから。",
+            "url": "https://note.com/regalo/n/nc3bc08c0dba1",
+            "creator_name": "mano a mano 店主｜洋服お直しと手芸教室",
+            "creator_url": "https://note.com/regalo",
+            "price": null,
+            "like_count": 12
+          },
+          {
+            "rank": 18,
+            "title": "AIを使っていても、「仕事」と「作業」は違うと気づいた日",
+            "url": "https://note.com/workredesign_st/n/n34ddba79630c",
+            "creator_name": "workredesign_story",
+            "creator_url": "https://note.com/workredesign_st",
+            "price": "¥500",
+            "like_count": null
+          },
+          {
+            "rank": 19,
+            "title": "公開後に止まりやすいのは、デザインではなく「更新」と「問い合わせ」の運用です",
+            "url": "https://note.com/quadeer/n/nb43b1301bdb2",
+            "creator_name": "バナナラボ合同会社｜Web運用・業務改善",
+            "creator_url": "https://note.com/quadeer",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 20,
+            "title": "使ってもらって初めて、『違う』がわかる。",
+            "url": "https://note.com/makahou_info/n/ned2988a68eb6",
+            "creator_name": "Maka hou(メカハウ)",
+            "creator_url": "https://note.com/makahou_info",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 21,
+            "title": "塾講師をしていたら、『カスタマーサクセス』という仕事が気になり始めた。",
+            "url": "https://note.com/niche_math/n/nbfcd95e425f3",
+            "creator_name": "にっちぇ📝",
+            "creator_url": "https://note.com/niche_math",
+            "price": null,
+            "like_count": 16
+          },
+          {
+            "rank": 22,
+            "title": "自主制作で確かめられること、実務でしか確かめられないこと",
+            "url": "https://note.com/junk_0528/n/n5c3724686a48",
+            "creator_name": "じゅん｜AIライター＠AI活用で仕事と暮らしを整える",
+            "creator_url": "https://note.com/junk_0528",
+            "price": null,
+            "like_count": 17
+          },
+          {
+            "rank": 23,
+            "title": "Web制作10年目。それでも、分からないことは普通にある",
+            "url": "https://note.com/tomoweb_lab/n/n29f547e9c6d4",
+            "creator_name": "ともきゃん｜Webで人生ちょいラク研究所",
+            "creator_url": "https://note.com/tomoweb_lab",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 24,
+            "title": "Web制作会社への未経験転職、架空サイトより先にやること",
+            "url": "https://note.com/shinkai_penguin/n/n95d5ab5ccfb2",
+            "creator_name": "ふかうみぺんぎん｜Web制作の現場ノート",
+            "creator_url": "https://note.com/shinkai_penguin",
+            "price": "¥500",
+            "like_count": null
+          },
+          {
+            "rank": 25,
+            "title": "仕組みが完成すると、すぐ次を作りたくなる自分の話",
+            "url": "https://note.com/firm_hornet9414/n/n7f009ec7a243",
+            "creator_name": "ケイ＠薬剤師✖️システム開発",
+            "creator_url": "https://note.com/firm_hornet9414",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 26,
+            "title": "AIで勤怠アプリを作ったら、アプリ以外のことをたくさん学べた",
+            "url": "https://note.com/dokushin003/n/n3b86f40f702e",
+            "creator_name": "Yuya × O.R.C.A.｜AIで仕事の面倒を仕組みに変える",
+            "creator_url": "https://note.com/dokushin003",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 27,
+            "title": "44歳、転職しなくてもキャリアは変えられる。会社員の僕が「自分の仕事」を広げてきた話",
+            "url": "https://note.com/408ownworks/n/n74e83b82fa73",
+            "creator_name": "408｜40代の試行錯誤ログ",
+            "creator_url": "https://note.com/408ownworks",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 28,
+            "title": "AIと働くようになって、「調べる時間」が変わった話",
+            "url": "https://note.com/mochisaya/n/n202d03973d41",
+            "creator_name": "望月小夜",
+            "creator_url": "https://note.com/mochisaya",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 29,
+            "title": "きめ細かい運用は、AIのポン出しではすぐにできない",
+            "url": "https://note.com/hampen2929/n/n8e567bc651da",
+            "creator_name": "はんぺん|AIコーディング×プロダクト開発",
+            "creator_url": "https://note.com/hampen2929",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 30,
+            "title": "【営業を10年やって思うこと。現場を知らない営業は、気づけないことがある。】",
+            "url": "https://note.com/rubu_/n/ne244c70f6f41",
+            "creator_name": "rubu｜人と現場を整える",
+            "creator_url": "https://note.com/rubu_",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 31,
+            "title": "AIに仕事を奪われない仕事は何だろう。",
+            "url": "https://note.com/tojo_h/n/n4477586a1fe6",
+            "creator_name": "hiroyuki0706",
+            "creator_url": "https://note.com/tojo_h",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 32,
+            "title": "良い仕組みを作れば、組織は良くなるのだろうか。",
+            "url": "https://note.com/bright_lupine143/n/nae3a1956a798",
+            "creator_name": "思考停止",
+            "creator_url": "https://note.com/bright_lupine143",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 33,
+            "title": "仕事が好きでいるには、次の手段が要る",
+            "url": "https://note.com/genial_slug6733/n/nb5a3c2c41632",
+            "creator_name": "マイカ",
+            "creator_url": "https://note.com/genial_slug6733",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 34,
+            "title": "AI自動化って、動けば完成じゃない。",
+            "url": "https://note.com/kmcn/n/nec3c786b8da0",
+            "creator_name": "K－すけ",
+            "creator_url": "https://note.com/kmcn",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 35,
+            "title": "デザインは、作って終わりだと思ってた。",
+            "url": "https://note.com/quick_shark7920/n/n6cdf31f1d864",
+            "creator_name": "shoko",
+            "creator_url": "https://note.com/quick_shark7920",
+            "price": null,
+            "like_count": 7
+          },
+          {
+            "rank": 36,
+            "title": "ゆる～い意識で絵の基礎力を引き上げる！質感の描き分け方。",
+            "url": "https://note.com/koki_ikegami/n/nc1051e631097",
+            "creator_name": "池上幸輝",
+            "creator_url": "https://note.com/koki_ikegami",
+            "price": null,
+            "like_count": 337
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-ndde0281889c1",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "ndde0281889c1",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": false,
+        "items": [
+          {
+            "rank": 1,
+            "title": "AIに実装を任せて、ちょっと痛い目に遭いました",
+            "url": "https://note.com/zero_ai_dev/n/n0fc0f017feb3",
+            "creator_name": "ZERO｜AI解析 開発",
+            "creator_url": "https://note.com/zero_ai_dev",
+            "price": "¥300",
+            "like_count": 1
+          },
+          {
+            "rank": 2,
+            "title": "AIが書いたコードの責任は、AIにはない",
+            "url": "https://note.com/ngin_z/n/n1ecd28d3a81b",
+            "creator_name": "nginz",
+            "creator_url": "https://note.com/ngin_z",
+            "price": null,
+            "like_count": 51
+          },
+          {
+            "rank": 3,
+            "title": "AIのコードが信用できないなら、人間がレビューすればいい。——たぶん、その発想が逆です",
+            "url": "https://note.com/ruta_lab/n/na5b83bcdd6e4",
+            "creator_name": "るた。｜AIと仕事の少し先",
+            "creator_url": "https://note.com/ruta_lab",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 4,
+            "title": "AIが書いたコードをレビューして気づいた、\"効率\"と\"分かりやすさ\"の抜け",
+            "url": "https://note.com/mochisaya/n/n516d44c8792e",
+            "creator_name": "望月小夜",
+            "creator_url": "https://note.com/mochisaya",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 5,
+            "title": "AIが作ったコードで、一番怖いのは「それっぽく動くこと」だった",
+            "url": "https://note.com/jazzy_bee7652/n/nab43b06f9c3b",
+            "creator_name": "あらもり",
+            "creator_url": "https://note.com/jazzy_bee7652",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 6,
+            "title": "「人間のレビューは完璧ではない」と言った会社が、それでも手放さなかった一つの承認",
+            "url": "https://note.com/proper_snail2088/n/n16dfe954f684",
+            "creator_name": "シキ｜AIにトコトン任せてみた記録",
+            "creator_url": "https://note.com/proper_snail2088",
+            "price": null,
+            "like_count": 9
+          },
+          {
+            "rank": 7,
+            "title": "AIの出力を信じてはいけない理由——「読める」と「合っている」は別物",
+            "url": "https://note.com/ai_kisoryoku/n/ncf835fb8b2ec",
+            "creator_name": "Masato｜AI基礎力研究所 主任研究員",
+            "creator_url": "https://note.com/ai_kisoryoku",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 8,
+            "title": "Codexのコードを読めない私が、何を確認すればいいのか",
+            "url": "https://note.com/yamaguchi_ai_dev/n/n010a937141ab",
+            "creator_name": "山口サトル｜営業職のAI駆動開発",
+            "creator_url": "https://note.com/yamaguchi_ai_dev",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 9,
+            "title": "テストは全部通っていた。それでも、AIの実装は間違っていた。",
+            "url": "https://note.com/zerokarahonban/n/n44c6d8c4dc77",
+            "creator_name": "ゼロから本番。AI個人開発",
+            "creator_url": "https://note.com/zerokarahonban",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 10,
+            "title": "AIが書いたコードをエンジニアはどこまで信用していいのか",
+            "url": "https://note.com/newtat/n/n96bce6851a75",
+            "creator_name": "たつぼん",
+            "creator_url": "https://note.com/newtat",
+            "price": "¥1,280",
+            "like_count": 1
+          },
+          {
+            "rank": 11,
+            "title": "人間も間違う。それでもAIのミスだけが怖く見える理由",
+            "url": "https://note.com/daizyken_6147/n/nf97aff71757e",
+            "creator_name": "でじけん",
+            "creator_url": "https://note.com/daizyken_6147",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 12,
+            "title": "Anthropicの80%、AI出力を検証",
+            "url": "https://note.com/ai_joyrushi/n/nfa91361275b3",
+            "creator_name": "AI蒸留氏",
+            "creator_url": "https://note.com/ai_joyrushi",
+            "price": "¥500",
+            "like_count": 13
+          },
+          {
+            "rank": 13,
+            "title": "「検証済み」を、疑えるだろうか｜ループエンジニアリングの盲点",
+            "url": "https://note.com/unc_notes/n/n047e812eb832",
+            "creator_name": "Marcus",
+            "creator_url": "https://note.com/unc_notes",
+            "price": null,
+            "like_count": 15
+          },
+          {
+            "rank": 14,
+            "title": "AIが書いたコードを、AIが書いたテストで確認する危うさ",
+            "url": "https://note.com/locolisu_lab/n/nceac3968c436",
+            "creator_name": "ロコリス研究所",
+            "creator_url": "https://note.com/locolisu_lab",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 15,
+            "title": "AIにコードを書かせるほど、「読む力」の価値が上がっている。",
+            "url": "https://note.com/tamafactory/n/n589cdfd35de4",
+            "creator_name": "HIDEKI TAMAI",
+            "creator_url": "https://note.com/tamafactory",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 16,
+            "title": "【＃15】AI自身に、自分を評価させていいのか？",
+            "url": "https://note.com/dear_laelia8122/n/nf1ee40cef88c",
+            "creator_name": "MIRAIKA",
+            "creator_url": "https://note.com/dear_laelia8122",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 17,
+            "title": "「AIに書かせる」より「AIにレビューさせる」クラフト・コーディング",
+            "url": "https://note.com/made_from_fuji/n/nf64d2da168de",
+            "creator_name": "しろふじ",
+            "creator_url": "https://note.com/made_from_fuji",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 18,
+            "title": "AIが書いたコードを「動いた」だけで採用しないために、確認を4つに分ける",
+            "url": "https://note.com/rom_0001/n/n2112f09cf1be",
+            "creator_name": "rom",
+            "creator_url": "https://note.com/rom_0001",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 19,
+            "title": "AIにテストを書かせる前に、仕様を書け",
+            "url": "https://note.com/ta_ka_mi_ya/n/n16e226bdfe4c",
+            "creator_name": "たかみや",
+            "creator_url": "https://note.com/ta_ka_mi_ya",
+            "price": null,
+            "like_count": 6
+          },
+          {
+            "rank": 20,
+            "title": "バグ上等。AIがコードを書く時代、SEの仕事は「AIの間違いを見抜くこと」になるのかもしれない。",
+            "url": "https://note.com/app_take/n/n31cc3f83fd31",
+            "creator_name": "たけだ｜AIアプリ開発｜気象予報士",
+            "creator_url": "https://note.com/app_take",
+            "price": null,
+            "like_count": 13
+          },
+          {
+            "rank": 21,
+            "title": "AIが書いたコードは、誰が責任を持つのか｜AI時代のレビューとテスト",
+            "url": "https://note.com/vivid_crocus8964/n/nd4b09ee8c82f",
+            "creator_name": "ちばしゅういち@ITぼうけんしゃ",
+            "creator_url": "https://note.com/vivid_crocus8964",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 22,
+            "title": "AIに書かせるようになって、私は「読む」が怖くなった。でも実は違った",
+            "url": "https://note.com/tasklog/n/nd665c1a078ec",
+            "creator_name": "tasklog",
+            "creator_url": "https://note.com/tasklog",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 23,
+            "title": "AIの「やっておきました」を検知する係を作ったら、検知できるものが14%しかなかった話",
+            "url": "https://note.com/kozue238/n/n618b553be9e2",
+            "creator_name": "こずえ",
+            "creator_url": "https://note.com/kozue238",
+            "price": null,
+            "like_count": 7
+          },
+          {
+            "rank": 24,
+            "title": "AIが速く作るほど、「どこを人が見るか」を決めないといけなくなった",
+            "url": "https://note.com/lush_owl8064/n/n4c875e58b8e8",
+            "creator_name": "SPICA &CO.",
+            "creator_url": "https://note.com/lush_owl8064",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 25,
+            "title": "「これ、AIでしょ?」と言われた日。──\"任せ切る\"と、たぶん死ぬ",
+            "url": "https://note.com/kurose_log/n/n5cf379d40b81",
+            "creator_name": "黒瀬｜AI実験記録",
+            "creator_url": "https://note.com/kurose_log",
+            "price": null,
+            "like_count": 19
+          },
+          {
+            "rank": 26,
+            "title": "「AIが書きました」の透かしがあってもなくても、最後に問われるのは人間のハンコじゃね",
+            "url": "https://note.com/nguu/n/n8774de5956da",
+            "creator_name": "ちゃんまー｜パパエンジニア",
+            "creator_url": "https://note.com/nguu",
+            "price": null,
+            "like_count": 55
+          },
+          {
+            "rank": 27,
+            "title": "AIで、「自分で作る」の意味は変わったのだろうか",
+            "url": "https://note.com/mojihokori_lab/n/ne24cd38c0a7b",
+            "creator_name": "モジホコリの生存戦略",
+            "creator_url": "https://note.com/mojihokori_lab",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 28,
+            "title": "AIに書かせるコードが増えるほど、壊れた時に自分で直せなくなっていく",
+            "url": "https://note.com/decisionlog_note/n/n66f3e5065af7",
+            "creator_name": "日々の思考記録",
+            "creator_url": "https://note.com/decisionlog_note",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 29,
+            "title": "AIに全部書かせて、最後に私が\"疑う\"理由",
+            "url": "https://note.com/hase0777000/n/n7594518000fa",
+            "creator_name": "長谷｜AI業務効率化×システム開発",
+            "creator_url": "https://note.com/hase0777000",
+            "price": null,
+            "like_count": 7
+          },
+          {
+            "rank": 30,
+            "title": "【設計課長のClaude実務日誌 #11】AIが書いた「対応できます」を、なぜ消したか",
+            "url": "https://note.com/sekkeiya_kenichi/n/ncf5306b48254",
+            "creator_name": "設計屋ケンイチ｜業務改善舎",
+            "creator_url": "https://note.com/sekkeiya_kenichi",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 31,
+            "title": "AIが書いたコードで、82%の組織が本番障害を経験している",
+            "url": "https://note.com/cool_weasel3790/n/n4bc6cd0c5d2a",
+            "creator_name": "御堂　彰",
+            "creator_url": "https://note.com/cool_weasel3790",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 32,
+            "title": "AI駆動開発で「作ること」より難しくなったこと",
+            "url": "https://note.com/suwash/n/nc0d95b2746d6",
+            "creator_name": "suwa-sh / 諏訪真一",
+            "creator_url": "https://note.com/suwash",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 33,
+            "title": "AIが書いたコードは、別の会社のAIにレビューさせる——テストが24件全部通ったコードから、見落としが13件出た",
+            "url": "https://note.com/witty_bobcat6938/n/n56991bba3639",
+            "creator_name": "野鍛冶（Nokaji）",
+            "creator_url": "https://note.com/witty_bobcat6938",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 34,
+            "title": "AIの答えはどこまで確認すべきか。自分の名前で出す前に決めた線",
+            "url": "https://note.com/clean_ferret2667/n/nafd3c70ab36c",
+            "creator_name": "Noi Lab",
+            "creator_url": "https://note.com/clean_ferret2667",
+            "price": null,
+            "like_count": 12
+          },
+          {
+            "rank": 35,
+            "title": "クラシコムに入社して8カ月。エンジニアの仕事と、働く中で感じたこと",
+            "url": "https://note.com/kurashicom_tech/n/nc170f8c5f343",
+            "creator_name": "クラシコム Tech Blog",
+            "creator_url": "https://note.com/kurashicom_tech",
+            "price": null,
+            "like_count": 37
+          },
+          {
+            "rank": 36,
+            "title": "AI画像を\"無料\"で作りたい人に、おすすめの生成AIツールをご紹介。",
+            "url": "https://note.com/ai_freak/n/n3d564db74a6d",
+            "creator_name": "AI FREAK - 最新のAIツールをご紹介",
+            "creator_url": "https://note.com/ai_freak",
+            "price": null,
+            "like_count": 545
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-na6608d963c15",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "na6608d963c15",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": true,
+        "items": [
+          {
+            "rank": 1,
+            "title": "AI検索に「載せる・載せない」を選べる時代へ。Googleの新設定をどう考える？",
+            "url": "https://note.com/ydb_issey/n/nf4989712b336",
+            "creator_name": "盛田一成 (Issey Morita)",
+            "creator_url": "https://note.com/ydb_issey",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 2,
+            "title": "AI検索に自社サイトを出すか、Search Consoleで選べるようになった",
+            "url": "https://note.com/signal_lens/n/n593066223619",
+            "creator_name": "れんず｜AI検索とSEOの観察ノート",
+            "creator_url": "https://note.com/signal_lens",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 3,
+            "title": "AI検索に出るかどうかを、サイト側が選べるようになりました｜降りる前に、見ておくものがあります",
+            "url": "https://note.com/afi_support/n/n96aa4e8a8b75",
+            "creator_name": "アダアフィサポート｜アダルトアフィリエイト収益化支援【公式】",
+            "creator_url": "https://note.com/afi_support",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 4,
+            "title": "Google AI検索から自サイトを外せる？新設定の注意点TOP10",
+            "url": "https://note.com/turuto/n/n2514988df032",
+            "creator_name": "つるとーのひとりごと",
+            "creator_url": "https://note.com/turuto",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 5,
+            "title": "GoogleのAI検索に「載せる／載せない」設定が登場——note投稿者は何を変えるべきか",
+            "url": "https://note.com/alert_dove6760/n/nde72a4ba2919",
+            "creator_name": "今日の解像度｜すぐ使える実用ノウハウ",
+            "creator_url": "https://note.com/alert_dove6760",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 6,
+            "title": "Google Search ConsoleがAI検索を“見える化”。AI Overviews / AI Modeの表示回数と参加設定が全世界へ",
+            "url": "https://note.com/cute_dunlin8019/n/n3db36b555f92",
+            "creator_name": "ＡＩ攻略ラボ　ジェミニの憂鬱",
+            "creator_url": "https://note.com/cute_dunlin8019",
+            "price": null,
+            "like_count": 6
+          },
+          {
+            "rank": 7,
+            "title": "AI担当になりました｜ChatGPTの設定、確認した？",
+            "url": "https://note.com/teamnekoha/n/n4b6e3aa55bc4",
+            "creator_name": "チームねこは",
+            "creator_url": "https://note.com/teamnekoha",
+            "price": null,
+            "like_count": 41
+          },
+          {
+            "rank": 8,
+            "title": "「Google検索」ボタンが消えるかもしれない ― それでも私が自社サイトを捨てない理由",
+            "url": "https://note.com/huge_ruff1150/n/nb7ac1d3c90ff",
+            "creator_name": "haruka202",
+            "creator_url": "https://note.com/huge_ruff1150",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 9,
+            "title": "生成AIにSEO記事を丸投げすると検索意図がズレる理由｜SEO記事企画②",
+            "url": "https://note.com/lost_sidejob/n/n55fdecbe6bfe",
+            "creator_name": "副業迷子の設計室",
+            "creator_url": "https://note.com/lost_sidejob",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 10,
+            "title": "noteの「AI学習対価還元プログラム」は、初期設定でオンになっています——でも、オフにしても止まらない経路がもう1本あります【2026年9月4日 公式ヘルプ実測】",
+            "url": "https://note.com/dailylaunch514/n/n6ee73cf2653b",
+            "creator_name": "デイリーローンチ",
+            "creator_url": "https://note.com/dailylaunch514",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 11,
+            "title": "noteのAI学習拒否設定を確認する手順｜2つの経路を分ける",
+            "url": "https://note.com/noa_notexai/n/n875112dfc2db",
+            "creator_name": "ノア｜note×AI執筆ラボ",
+            "creator_url": "https://note.com/noa_notexai",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 12,
+            "title": "初心者でもわかる 今日のAIニュース5選｜2026-09-01",
+            "url": "https://note.com/firm_swift5456/n/ndf4bdca5894b",
+            "creator_name": "E＆A出版社",
+            "creator_url": "https://note.com/firm_swift5456",
+            "price": null,
+            "like_count": 19
+          },
+          {
+            "rank": 13,
+            "title": "生成AIの学習機能をオフにする方法｜最初にやるべき3つの設定 ",
+            "url": "https://note.com/inadigital/n/n8df5f8b34d7d",
+            "creator_name": "イナデジ",
+            "creator_url": "https://note.com/inadigital",
+            "price": null,
+            "like_count": 8
+          },
+          {
+            "rank": 14,
+            "title": "AIによる概要は消せるのか｜出る条件とウェブフィルタの使い方をGoogle検索ヘルプで確かめる",
+            "url": "https://note.com/usamiho/n/n8da7428cc491",
+            "creator_name": "うさみほ｜AIをがんばる50代女性｜スタートAI口コミ・評判レビュー",
+            "creator_url": "https://note.com/usamiho",
+            "price": null,
+            "like_count": 7
+          },
+          {
+            "rank": 15,
+            "title": "知らない間に、僕のサイトはAIに「読むな」と言っていた",
+            "url": "https://note.com/namelancer/n/nc62fd971ae88",
+            "creator_name": "ロエル｜元・上場企業役員CMO→名前で独立",
+            "creator_url": "https://note.com/namelancer",
+            "price": null,
+            "like_count": 22
+          },
+          {
+            "rank": 16,
+            "title": "CodexのAI社員にSearch Consoleを見に行ってもらう｜ブログ改善AI会社、最初の仕事",
+            "url": "https://note.com/shizukuai/n/nfb4bb9dd766b",
+            "creator_name": "しずく｜未経験でも月3〜5万を作るAI副業の案内人",
+            "creator_url": "https://note.com/shizukuai",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 17,
+            "title": "AIに見せるかではなく、何に使わせるか",
+            "url": "https://note.com/dtomida/n/n97558403bf74",
+            "creator_name": "tommy🚴🏼フリーランスITエンジニア",
+            "creator_url": "https://note.com/dtomida",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 18,
+            "title": "【保存版】Google検索のAI Overviewはオフにできる？表示・履歴・Gemini設定を整理",
+            "url": "https://note.com/ai__on/n/n1cccc9bae969",
+            "creator_name": "ソウタ｜経営・マーケに使える最新AI解説",
+            "creator_url": "https://note.com/ai__on",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 19,
+            "title": "自社サイトが「AIに引用される」ための実装キット｜Google公式が\"やらなくていい\"と言った5つを、まず捨てる",
+            "url": "https://note.com/hip_emu4843/n/na9d337116e93",
+            "creator_name": "三田健司｜アクセス・リンク代表",
+            "creator_url": "https://note.com/hip_emu4843",
+            "price": "¥1,980",
+            "like_count": null
+          },
+          {
+            "rank": 20,
+            "title": "AIに入力した文章は学習される？「学習・保存・参照」の違いを初心者向けに整理",
+            "url": "https://note.com/around30monolog/n/nf10e0cbb4957",
+            "creator_name": "トシ@IT&AIを初心者にもわかりやすく",
+            "creator_url": "https://note.com/around30monolog",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 21,
+            "title": "「AIが勝手に学習する」は半分誤解｜学習に使われる条件と、使わせない設定",
+            "url": "https://note.com/kaomatsu_ds/n/n93c841c7a13f",
+            "creator_name": "カオマツ｜AIエージェント×業務改善の専門家",
+            "creator_url": "https://note.com/kaomatsu_ds",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 22,
+            "title": "3行の利用規約で半日が消えた話とAIサブプロセッサの確認観点",
+            "url": "https://note.com/ai_joshisu/n/n634f87e19eda",
+            "creator_name": "AIを使う情シス｜調査票・監査対応",
+            "creator_url": "https://note.com/ai_joshisu",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 23,
+            "title": "AIに、私はどこまでの情報を教えてる？",
+            "url": "https://note.com/hitori_sanbou/n/n0ad08e73a769",
+            "creator_name": "AI参謀｜ひとり社長のAI活用",
+            "creator_url": "https://note.com/hitori_sanbou",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 24,
+            "title": "会社で使えるAIは決まったのに、何を入れていいかは決まっていない",
+            "url": "https://note.com/clean_ferret2667/n/n2bea4d6e92ee",
+            "creator_name": "Noi Lab",
+            "creator_url": "https://note.com/clean_ferret2667",
+            "price": null,
+            "like_count": 27
+          },
+          {
+            "rank": 25,
+            "title": "【保存版】生成AIの利用規約、全部読まなくていい――会社で使うなら確認したい5項目",
+            "url": "https://note.com/takayuki_sase/n/n8bc99da4be3a",
+            "creator_name": "Takayuki Sase",
+            "creator_url": "https://note.com/takayuki_sase",
+            "price": null,
+            "like_count": 15
+          },
+          {
+            "rank": 26,
+            "title": "会社の資料をAIに貼ってよい？学習オフ設定と伏せ方の実務ルール",
+            "url": "https://note.com/aaconsulting/n/n67a863f2b9ae",
+            "creator_name": "日本一相談の多いFP富山俊太郎",
+            "creator_url": "https://note.com/aaconsulting",
+            "price": "¥350",
+            "like_count": 1
+          },
+          {
+            "rank": 27,
+            "title": "AIの「学習オフ」だけで安心しない｜データ設定を4つに分けて読む方法",
+            "url": "https://note.com/sheep_ai_/n/n82b21dea6ba8",
+            "creator_name": "ひつじ丨AI時代の迷える子羊",
+            "creator_url": "https://note.com/sheep_ai_",
+            "price": null,
+            "like_count": 8
+          },
+          {
+            "rank": 28,
+            "title": "ChatGPT検索でSEO対策が通用しない、は半分だけ正しい",
+            "url": "https://note.com/effectmoe/n/nc040d032c4be",
+            "creator_name": "シュ コウメイ TonyChu",
+            "creator_url": "https://note.com/effectmoe",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 29,
+            "title": "【速報】GPT-6 Astra発表。ChatGPTは「答えるAI」から「ソフトを動かすAI」へ。",
+            "url": "https://note.com/after_ai_web/n/n40878e065217",
+            "creator_name": "AI以後のデジタルマーケティング業界",
+            "creator_url": "https://note.com/after_ai_web",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 30,
+            "title": "ChatGPT・Claude・Geminiへ入れる前に。会社員が守る8つの情報漏洩対策",
+            "url": "https://note.com/matsumotot/n/nc68e7228a5b3",
+            "creator_name": "らえる｜AIコンサルの現場から副業を考える",
+            "creator_url": "https://note.com/matsumotot",
+            "price": "¥100",
+            "like_count": null
+          },
+          {
+            "rank": 31,
+            "title": "Googleの新しいAI学習設定とは？メディアデータを保存されたくない人が見るポイント",
+            "url": "https://note.com/mionohako/n/n16fe12a966aa",
+            "creator_name": "みお📦フォ｜AIツール実験室",
+            "creator_url": "https://note.com/mionohako",
+            "price": null,
+            "like_count": 10
+          },
+          {
+            "rank": 32,
+            "title": "AIの主戦場は「運用設計」へ──最新AIニュース5本",
+            "url": "https://note.com/chackwill/n/nf3a5d59890a4",
+            "creator_name": "チャック | \"原理1個\"派のAIニュース翻訳家",
+            "creator_url": "https://note.com/chackwill",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 33,
+            "title": "AIに話したことは学習に使われるのか　答えは設定画面と公式ポリシーに書いてある",
+            "url": "https://note.com/ripe_ixora5107/n/ne1431c5e993f",
+            "creator_name": "ハルとAI編集室｜仕組みで読む",
+            "creator_url": "https://note.com/ripe_ixora5107",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 34,
+            "title": "【8月28日】AIに任せる前に見る5つの線。予約・教材・広告・評価を、今日確認する",
+            "url": "https://note.com/ai_tofumaru/n/n54383732112f",
+            "creator_name": "とふまる | AIを普及させる人",
+            "creator_url": "https://note.com/ai_tofumaru",
+            "price": null,
+            "like_count": 9
+          },
+          {
+            "rank": 35,
+            "title": "自社サイトのコンテンツ、AIに無断学習されないために — 企業がいま設定すべき「AIクロール対策」チェックリスト【10項目】",
+            "url": "https://note.com/ipconnet/n/nb5981739e701",
+            "creator_name": "IPconnect",
+            "creator_url": "https://note.com/ipconnet",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 36,
+            "title": "Google、Bloggerを“身内だけ”にした？――ChatGPTには読めないのにGoogle AIには読めた",
+            "url": "https://note.com/guilty_bc/n/nabcf2cbafef3",
+            "creator_name": "浅沼吉住",
+            "creator_url": "https://note.com/guilty_bc",
+            "price": null,
+            "like_count": 6
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-n85b19b38a0bd",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "n85b19b38a0bd",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": false,
+        "items": [
+          {
+            "rank": 1,
+            "title": "会社の仕事でChatGPTを使う前に確認したいこと｜個人利用・社内ルール・相談の順番を決めるチェックリスト",
+            "url": "https://note.com/gay_walrus2233/n/nb9c586c2b8bf",
+            "creator_name": "naoさん",
+            "creator_url": "https://note.com/gay_walrus2233",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 2,
+            "title": "会社でAIを使っていいか分からない人へ──確認すべき3点と、上司への聞き方",
+            "url": "https://note.com/jimurecipe/n/n27fe1a245878",
+            "creator_name": "じむレシピ",
+            "creator_url": "https://note.com/jimurecipe",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 3,
+            "title": "会社員がChatGPTに入れてはいけない情報7選｜そのコピペ、本当に大丈夫？【第8章】",
+            "url": "https://note.com/ai_gyomukaikaku/n/naed58dbdf274",
+            "creator_name": "仕事を減らす研究所｜AI×業務改革",
+            "creator_url": "https://note.com/ai_gyomukaikaku",
+            "price": null,
+            "like_count": 22
+          },
+          {
+            "rank": 4,
+            "title": "会社に黙ってChatGPTを使うのは、どこからアウトなのか",
+            "url": "https://note.com/kurihara_y_dyla/n/n10b19e767ce3",
+            "creator_name": "栗原　～あなたのコンサルタント～",
+            "creator_url": "https://note.com/kurihara_y_dyla",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 5,
+            "title": "会社員がChatGPTに入力してはいけない情報｜安全な置き換え例つき",
+            "url": "https://note.com/deft_serval2219/n/nf39923a1fd8a",
+            "creator_name": "しょうのAI研究所｜ChatGPT仕事術",
+            "creator_url": "https://note.com/deft_serval2219",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 6,
+            "title": "ChatGPTに入力してはいけない情報は？仕事で使う前に知っておきたい境界線",
+            "url": "https://note.com/imashirube/n/n2f890e75c66d",
+            "creator_name": "イマシルベ｜今を知って、得をしよう。",
+            "creator_url": "https://note.com/imashirube",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 7,
+            "title": "【初心者必見】仕事でChatGPTを使う前に｜入力していい情報・ダメな情報を初心者向けに解説",
+            "url": "https://note.com/safe_moraea4819/n/n6566ca9c3e71",
+            "creator_name": "Ai活用ラボ",
+            "creator_url": "https://note.com/safe_moraea4819",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 8,
+            "title": "仕事の資料をAIに貼る前に、30秒で確認する3つのこと",
+            "url": "https://note.com/30_nayami_labo/n/n1d9df7aeff69",
+            "creator_name": "30代から人生を変えた男",
+            "creator_url": "https://note.com/30_nayami_labo",
+            "price": null,
+            "like_count": 17
+          },
+          {
+            "rank": 9,
+            "title": "個人ChatGPTを業務で使ってよい情報と使えない情報の線引き",
+            "url": "https://note.com/reizi_production/n/n8f32c939371a",
+            "creator_name": "K.Reizi",
+            "creator_url": "https://note.com/reizi_production",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 10,
+            "title": "会社でChatGPTを使う前に確認したい7項目｜便利さより先に守るもの",
+            "url": "https://note.com/shigotojutsu_lab/n/nfd23e3de3f37",
+            "creator_name": "会社員仕事Lab｜元強豪校球児のAI仕事術",
+            "creator_url": "https://note.com/shigotojutsu_lab",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 11,
+            "title": "ChatGPTって仕事で使っても大丈夫？",
+            "url": "https://note.com/nekoharu_dx/n/nd22386410d52",
+            "creator_name": "ねこはるラボ ｜ 40代女性の仕事を、AIとDXで少しずつラクに。",
+            "creator_url": "https://note.com/nekoharu_dx",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 12,
+            "title": "【2026年8月最新】個人のChatGPTで足りる会社、法人契約にすべき会社｜分かれ目は「何を入力しているか」です",
+            "url": "https://note.com/kotatsu_ai_jadc/n/n867a91e7aa19",
+            "creator_name": "日本AI開発センター株式会社",
+            "creator_url": "https://note.com/kotatsu_ai_jadc",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 13,
+            "title": "会社の情報をChatGPTに入れて大丈夫？ ChatGPT・Claude・Geminiを「学習・保存・人間レビュー・管理機能」で公式情報だけから比較【2026年8月版】",
+            "url": "https://note.com/rapid_dog1534/n/n34d1f2c82d8a",
+            "creator_name": "インターネット調査室",
+            "creator_url": "https://note.com/rapid_dog1534",
+            "price": null,
+            "like_count": 7
+          },
+          {
+            "rank": 14,
+            "title": "あなたの会社は、AIを使っていいことになっていますか（最多回答は「わからない」37.7%・社会人793人）",
+            "url": "https://note.com/ai_memo_room/n/n44852758508e",
+            "creator_name": "AIメモ室 ～AIで、机に余白を作るメモ室",
+            "creator_url": "https://note.com/ai_memo_room",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 15,
+            "title": "ChatGPTに個人情報や社内資料を入れて大丈夫？仕事で使う前の5つの確認",
+            "url": "https://note.com/kaiketunote/n/nb855acb0c308",
+            "creator_name": "kaiketunote",
+            "creator_url": "https://note.com/kaiketunote",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 16,
+            "title": "会社でChatGPTやClaudeを「勝手に」使えない、本当の理由",
+            "url": "https://note.com/hakutane/n/n0b48270796a4",
+            "creator_name": "AI時代の働き方｜これは任せて、わたしはこっち。",
+            "creator_url": "https://note.com/hakutane",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 17,
+            "title": "ChatGPTに個人情報・会社情報、どこまで入れていい？｜入力前に確認したい情報の分け方【2026年8月版】",
+            "url": "https://note.com/calm_dove4104/n/n0f12e1b1f747",
+            "creator_name": "こまりごと商店",
+            "creator_url": "https://note.com/calm_dove4104",
+            "price": "¥300",
+            "like_count": null
+          },
+          {
+            "rank": 18,
+            "title": "仕事で生成AIを使うとき、会社員が最初に確認する情報管理の5項目",
+            "url": "https://note.com/ai_work_sindan/n/n9f36f23ad19a",
+            "creator_name": "AI時代の働き方診断",
+            "creator_url": "https://note.com/ai_work_sindan",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 19,
+            "title": "ChatGPTの無料版と有料版で何が違うのか｜会社で使うときの判断基準",
+            "url": "https://note.com/kaomatsu_ds/n/nd48a05fef13b",
+            "creator_name": "カオマツ｜AIエージェント×業務改善の専門家",
+            "creator_url": "https://note.com/kaomatsu_ds",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 20,
+            "title": "社員が個人AIに業務情報を入れる前に、会社が決めるべきこと",
+            "url": "https://note.com/holy_beetle8467/n/n34e88b6886f8",
+            "creator_name": "佐藤健一フォロバ100%",
+            "creator_url": "https://note.com/holy_beetle8467",
+            "price": null,
+            "like_count": 12
+          },
+          {
+            "rank": 21,
+            "title": "【保存版】生成AIの利用規約、全部読まなくていい――会社で使うなら確認したい5項目",
+            "url": "https://note.com/takayuki_sase/n/n8bc99da4be3a",
+            "creator_name": "Takayuki Sase",
+            "creator_url": "https://note.com/takayuki_sase",
+            "price": null,
+            "like_count": 15
+          },
+          {
+            "rank": 22,
+            "title": "ChatGPTの回答、どこまで信用していい？初心者が確認した方がいい5つのこと",
+            "url": "https://note.com/aiteam_log/n/n1998d533cebc",
+            "creator_name": "AIチーム実録｜現場の人",
+            "creator_url": "https://note.com/aiteam_log",
+            "price": null,
+            "like_count": 6
+          },
+          {
+            "rank": 23,
+            "title": "ChatGPTに社員のことを相談する前に。管理職が決めておきたい匿名化ルール7つ",
+            "url": "https://note.com/aiming_shoo/n/n344b8544155c",
+            "creator_name": "シン ｜現役管理部長×生成AI",
+            "creator_url": "https://note.com/aiming_shoo",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 24,
+            "title": "ChatGPTに「合ってる？」と聞かない。仕事で使うAIチェックの5つの質問",
+            "url": "https://note.com/dapper_emu3654/n/n133c870e22d6",
+            "creator_name": "ショウ",
+            "creator_url": "https://note.com/dapper_emu3654",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 25,
+            "title": "AIに、私はどこまでの情報を教えてる？",
+            "url": "https://note.com/hitori_sanbou/n/n0ad08e73a769",
+            "creator_name": "AI参謀｜ひとり社長のAI活用",
+            "creator_url": "https://note.com/hitori_sanbou",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 26,
+            "title": "「ChatGPT、これ会社で使って大丈夫？」に答えられますか？AIを禁止する前に、会社が決めておきたい最低限のルール",
+            "url": "https://note.com/bold_emu296/n/nc120a22795f2",
+            "creator_name": "朱李",
+            "creator_url": "https://note.com/bold_emu296",
+            "price": "¥300〜",
+            "like_count": 7
+          },
+          {
+            "rank": 27,
+            "title": "仕事でChatGPTを使うときに注意したい5つのこと",
+            "url": "https://note.com/joyful_phlox2932/n/nd320510d3d9d",
+            "creator_name": "しくみ屋",
+            "creator_url": "https://note.com/joyful_phlox2932",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 28,
+            "title": "会社の情報をChatGPTに入れて大丈夫？生成AIを仕事で使うときの7つの注意点",
+            "url": "https://note.com/otona_aisan/n/n31dcb0e74d47",
+            "creator_name": "「亘一｜大人のAI実践ノート」",
+            "creator_url": "https://note.com/otona_aisan",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 29,
+            "title": "その情報、AIに貼って大丈夫？会社員が入力前に止めたい5つの情報",
+            "url": "https://note.com/benrikobo/n/nc7632f5bd70c",
+            "creator_name": "ずっと四苦hack｜便利工房ラボ",
+            "creator_url": "https://note.com/benrikobo",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 30,
+            "title": "【Day14】ChatGPTに仕事を任せるとき、絶対にやってはいけないこと",
+            "url": "https://note.com/fair_hornet586/n/n5d906def0658",
+            "creator_name": "AIで人生をHappyにするLabo｜AI仕事術・副業・最新AI",
+            "creator_url": "https://note.com/fair_hornet586",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 31,
+            "title": "AI担当になりました｜ChatGPTの設定、確認した？",
+            "url": "https://note.com/teamnekoha/n/n4b6e3aa55bc4",
+            "creator_name": "チームねこは",
+            "creator_url": "https://note.com/teamnekoha",
+            "price": null,
+            "like_count": 41
+          },
+          {
+            "rank": 32,
+            "title": "ChatGPTに社内説明資料を頼む前に、渡してよい情報・渡さない情報",
+            "url": "https://note.com/lithe_garlic9697/n/na2249757687f",
+            "creator_name": "WORK DESIGN LAB",
+            "creator_url": "https://note.com/lithe_garlic9697",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 33,
+            "title": "会社でAIを使っていいか、自分で決める順番｜確認15項目と、そのまま送れる文例",
+            "url": "https://note.com/wakaru_maru/n/na921c60ce5f5",
+            "creator_name": "まる | むずかしいを、わかりやすく。",
+            "creator_url": "https://note.com/wakaru_maru",
+            "price": "¥300",
+            "like_count": 2
+          },
+          {
+            "rank": 34,
+            "title": "【知らないと危険】ChatGPTを仕事で使うとき「やってはいけない」3つのこと",
+            "url": "https://note.com/lively_tern358/n/ne558bb2f0d5c",
+            "creator_name": "タイパAI仕事術＠ナオキ",
+            "creator_url": "https://note.com/lively_tern358",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 35,
+            "title": "ChatGPTの回答を仕事で使う前に、30秒で見る場所",
+            "url": "https://note.com/safe_ruff2294/n/n112f5e5ce28c",
+            "creator_name": "PRACTICAL AI LAB",
+            "creator_url": "https://note.com/safe_ruff2294",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 36,
+            "title": "社長から新入社員まで！カバンの中身を覗いてみたら、人間味が溢れまくっていた",
+            "url": "https://note.com/fhc_pr/n/n99883ef9c2d9",
+            "creator_name": "株式会社船井総研ヒューマンキャピタルコンサルティング",
+            "creator_url": "https://note.com/fhc_pr",
+            "price": null,
+            "like_count": 237
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-n3fbd30604a7c",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "n3fbd30604a7c",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": true,
+        "items": [
+          {
+            "rank": 1,
+            "title": "2026年10月のカスハラ義務化、既存のハラスメント防止規程の「直すべき条項」をClaude Codeに出させてみた",
+            "url": "https://note.com/yuji_ai_tool/n/nbc6c3fda1eea",
+            "creator_name": "Yuji｜業務効率化ツール開発",
+            "creator_url": "https://note.com/yuji_ai_tool",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 2,
+            "title": "顧問先から3本まとめて聞かれる。10月施行をAIで整理する手順",
+            "url": "https://note.com/shikumiya_genki/n/nc5e08ceb0244",
+            "creator_name": "仕組み屋ゲンキ",
+            "creator_url": "https://note.com/shikumiya_genki",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 3,
+            "title": "カスハラ義務化のやることを18の作業に分解しました。着手順つきの全体像",
+            "url": "https://note.com/shun_maruoka/n/nf4c5829eafaa",
+            "creator_name": "丸岡 峻｜MeHer株式会社 代表取締役",
+            "creator_url": "https://note.com/shun_maruoka",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 4,
+            "title": "カスハラ対策、いつまでに何をすればいい？施行まであと3か月の逆算チェックリスト",
+            "url": "https://note.com/workmind_jp/n/n856bdeca4f6a",
+            "creator_name": "WorkMind公式note",
+            "creator_url": "https://note.com/workmind_jp",
+            "price": null,
+            "like_count": 8
+          },
+          {
+            "rank": 5,
+            "title": "【2026年10月カスハラ義務化】小さな会社がまず作る「実務セット」",
+            "url": "https://note.com/papajp/n/n3ea5892e873d",
+            "creator_name": "papajp",
+            "creator_url": "https://note.com/papajp",
+            "price": "¥500",
+            "like_count": null
+          },
+          {
+            "rank": 6,
+            "title": "カスハラと就活セクハラ、規程のどこに足すか",
+            "url": "https://note.com/senbikiya/n/nec9b4be9ad98",
+            "creator_name": "線引屋",
+            "creator_url": "https://note.com/senbikiya",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 7,
+            "title": "10月1日から、カスハラ対策は全事業主の義務です。小さい会社に猶予はありません",
+            "url": "https://note.com/ojinokojo/n/n4d8ee8f343a2",
+            "creator_name": "おじの向上",
+            "creator_url": "https://note.com/ojinokojo",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 8,
+            "title": "【カスハラ義務化】2026年10月から、全事業主が対象です",
+            "url": "https://note.com/just_letbe/n/nccc9c5f52b85",
+            "creator_name": "ユア@顧問弁護士",
+            "creator_url": "https://note.com/just_letbe",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 9,
+            "title": "10月1日から変わるのは「カスハラ」だけではない。人事が見落としやすい「採用現場」の新ルール",
+            "url": "https://note.com/takuma9504/n/nb45b4d5e31eb",
+            "creator_name": "採用の裏側を知る人・キリュウ｜就活・転職・人事",
+            "creator_url": "https://note.com/takuma9504",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 10,
+            "title": "2026年10月義務化｜小さな会社が今やるカスハラ・求職者セクハラ対策",
+            "url": "https://note.com/pluskanzaki/n/nf9776fc145ce",
+            "creator_name": "神崎ようこ｜管理職試験と職場づくり",
+            "creator_url": "https://note.com/pluskanzaki",
+            "price": "¥980",
+            "like_count": 1
+          },
+          {
+            "rank": 11,
+            "title": "義務化まであと2カ月。カスハラ対策、どこから手をつけるかを順番に並べてみました",
+            "url": "https://note.com/manebi_official/n/n80f5076c371f",
+            "creator_name": "株式会社manebi",
+            "creator_url": "https://note.com/manebi_official",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 12,
+            "title": "義務化まで30日。製造業・建設業のカスハラ対策、何から始めますか？",
+            "url": "https://note.com/yoshimirai/n/n5f8dce007bc7",
+            "creator_name": "田澤良行.@7000名以上とハラスメントに関わった実績×書籍出版×MBA",
+            "creator_url": "https://note.com/yoshimirai",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 13,
+            "title": "10月1日からカスハラ対策が事業主の義務に。「クレーム全部がカスハラ」ではありません",
+            "url": "https://note.com/mio_change_26/n/nd509f2a8ea30",
+            "creator_name": "澪｜変更ウォッチ",
+            "creator_url": "https://note.com/mio_change_26",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 14,
+            "title": "16 ｜カスハラ対策義務化直前、ヌケモレ総点検【施行前１０項目チェック付】",
+            "url": "https://note.com/masuda_asami/n/n9d4982c4fcd4",
+            "creator_name": "益田麻実｜クレーム対応・カスハラ対策コンサルタント",
+            "creator_url": "https://note.com/masuda_asami",
+            "price": "¥280",
+            "like_count": null
+          },
+          {
+            "rank": 15,
+            "title": "カスハラ対策の義務化〜中小企業が最初に「何から始める？」で止まった話〜",
+            "url": "https://note.com/noble_yarrow4431/n/ne08db421abdd",
+            "creator_name": "止まらない総務ママ",
+            "creator_url": "https://note.com/noble_yarrow4431",
+            "price": null,
+            "like_count": 6
+          },
+          {
+            "rank": 16,
+            "title": "10月1日からカスハラ対策が義務になります。厚労省の10項目を読んで、ツールで代われるものは1つも無いと分かりました",
+            "url": "https://note.com/netbot_jp/n/n1cad9e90591d",
+            "creator_name": "NetBot｜AIチャットボット",
+            "creator_url": "https://note.com/netbot_jp",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 17,
+            "title": "【2026年10月1日施行】カスハラ対策が全事業主に義務化。中小企業も猶予なし、10月までに揃える「5つの措置」完全ガイド",
+            "url": "https://note.com/famous_elk8595/n/n00faf14b0e1e",
+            "creator_name": "ぶんた｜法律・行政ネタ配信",
+            "creator_url": "https://note.com/famous_elk8595",
+            "price": "¥300〜",
+            "like_count": 2
+          },
+          {
+            "rank": 18,
+            "title": "クレーマーに詰められたあの日、担当者を救ったのは「断る権利」ではなかった",
+            "url": "https://note.com/jinjijitsumu/n/n4398144ca554",
+            "creator_name": "管理部門の実務設計室",
+            "creator_url": "https://note.com/jinjijitsumu",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 19,
+            "title": "【テンプレート配布】2026年10月カスハラ義務化に、社名を入れるだけで間に合わせる社内文書7点",
+            "url": "https://note.com/brainy_donkey610/n/n54004afa9338",
+            "creator_name": "AI＆投資研究家",
+            "creator_url": "https://note.com/brainy_donkey610",
+            "price": "¥9,500",
+            "like_count": null
+          },
+          {
+            "rank": 20,
+            "title": "カスハラ対策義務化まで残り3ヶ月。まだ何もしていない会社は、何から始めればいい？",
+            "url": "https://note.com/sharoshiengineer/n/nfd502b879571",
+            "creator_name": "社労士エンジニア",
+            "creator_url": "https://note.com/sharoshiengineer",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 21,
+            "title": "2026年10月義務化「カスタマーハラスメント」──会社が今すぐ備えるべきこと",
+            "url": "https://note.com/sas_sroffice/n/n06d527ca1b62",
+            "creator_name": "佐藤創｜SAS社会保険労務士事務所",
+            "creator_url": "https://note.com/sas_sroffice",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 22,
+            "title": "【2026年10月施行】カスタマーハラスメント対策が義務化。企業が9月中に整えたい5つのこと",
+            "url": "https://note.com/peak_up/n/n6c7f0ef87440",
+            "creator_name": "上村美由紀｜社会保険労務士法人ピークアップ",
+            "creator_url": "https://note.com/peak_up",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 23,
+            "title": "【2026年10月1日施行】カスハラ対策の義務化。従業員が1人でもいる会社がやるべきこと",
+            "url": "https://note.com/kamigakari/n/n3eb514c59729",
+            "creator_name": "kamigakari",
+            "creator_url": "https://note.com/kamigakari",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 24,
+            "title": "2026年10月からカスハラ対策が「全企業で義務化」——中小企業が最低限やるべき3つのこと",
+            "url": "https://note.com/aimakerlab/n/nbdda87dfdc3f",
+            "creator_name": "AI Maker Lab",
+            "creator_url": "https://note.com/aimakerlab",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 25,
+            "title": "【そのまま使える規程例付】2026年10月就活セクハラ義務化の対応手順",
+            "url": "https://note.com/lavorsjsince08/n/n244ce22c8c53",
+            "creator_name": "人事労務ブリーフィング｜5分でわかる人事労務のいま",
+            "creator_url": "https://note.com/lavorsjsince08",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 26,
+            "title": "「カスハラ相談窓口を作ったので、10月対応は終わりですよね？」施行前に法務が確認する4つのこと",
+            "url": "https://note.com/fujita_legal_ai/n/nd96ca52d2e32",
+            "creator_name": "藤田｜法務・ブログ・学習×AI",
+            "creator_url": "https://note.com/fujita_legal_ai",
+            "price": "¥100",
+            "like_count": null
+          },
+          {
+            "rank": 27,
+            "title": "2026年10月施行！カスハラ対策義務化",
+            "url": "https://note.com/tender_toad5379/n/n6445219615c4",
+            "creator_name": "高橋/社労士　となりのブレイン",
+            "creator_url": "https://note.com/tender_toad5379",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 28,
+            "title": "カスハラ対策義務化、中小企業はどう備える？",
+            "url": "https://note.com/minds_2003/n/n49f9e5de1e40",
+            "creator_name": "社長の気持ちが軽くなる｜FP視点の“止まらない経営”設計@石井修一",
+            "creator_url": "https://note.com/minds_2003",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 29,
+            "title": "2026年10月施行のカスハラ対策で会社がすべきこと",
+            "url": "https://note.com/match11/n/ndd1783f33dce",
+            "creator_name": "働きやすい職場づくり:採用定着、メンタル不調者が出ない職場設計の支援：たけもと心理・労務オフィス",
+            "creator_url": "https://note.com/match11",
+            "price": null,
+            "like_count": 12
+          },
+          {
+            "rank": 30,
+            "title": "2026年10月、カスハラ対策が「義務」になる ― 中小企業が今日からやるべき3措置チェックリスト",
+            "url": "https://note.com/right_quoll9367/n/n533bbafeac2a",
+            "creator_name": "たくな｜元白バイ隊員が教える交通ルール",
+            "creator_url": "https://note.com/right_quoll9367",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 31,
+            "title": "就業規則を1本入れると、2026年10月の社保適用拡大で直す条文だけを抜き出す",
+            "url": "https://note.com/jidokalog/n/n9bfcda4f8e82",
+            "creator_name": "自動化ログ｜作って動いてるものだけ書きます",
+            "creator_url": "https://note.com/jidokalog",
+            "price": "¥298",
+            "like_count": null
+          },
+          {
+            "rank": 32,
+            "title": "第20回（8/26）義務化はもう目前——いま技術選定を始めるべき理由",
+            "url": "https://note.com/safedesk/n/n475e182c9fd2",
+            "creator_name": "カスハラ対策法改正2026ナレッジハブ",
+            "creator_url": "https://note.com/safedesk",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 33,
+            "title": "介護事業所のカスハラ対策｜2026年10月1日義務化までに整える4点",
+            "url": "https://note.com/massets/n/nb89fe886b3b8",
+            "creator_name": "税理士法人辻総合会計｜相続・クリニック・創業支援",
+            "creator_url": "https://note.com/massets",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 34,
+            "title": "10月1日、面接が「法律の対象」になります——飲食店の求人票に、9月中に足すべき一行",
+            "url": "https://note.com/marutto_saiyo/n/n6cd1b4e6efac",
+            "creator_name": "長澤 勇介│まるっと採用代行",
+            "creator_url": "https://note.com/marutto_saiyo",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 35,
+            "title": "2026年10月からカスハラ対策が義務化｜企業が準備すべき方針・体制とは？",
+            "url": "https://note.com/clarity_works/n/n12dd94fb2f3b",
+            "creator_name": "株式会社ClarityWorks",
+            "creator_url": "https://note.com/clarity_works",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 36,
+            "title": "コールセンターのカスハラ12類型：自分の職場に当てはめる",
+            "url": "https://note.com/right_viola568/n/nc304a91d7fc9",
+            "creator_name": "さと|現役コールセンター管理者",
+            "creator_url": "https://note.com/right_viola568",
+            "price": null,
+            "like_count": 2
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-n7ef133760bff",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "n7ef133760bff",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": true,
+        "items": [
+          {
+            "rank": 1,
+            "title": "カスハラ義務化のやることを18の作業に分解しました。着手順つきの全体像",
+            "url": "https://note.com/shun_maruoka/n/nf4c5829eafaa",
+            "creator_name": "丸岡 峻｜MeHer株式会社 代表取締役",
+            "creator_url": "https://note.com/shun_maruoka",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 2,
+            "title": "カスハラ対策、いつまでに何をすればいい？施行まであと3か月の逆算チェックリスト",
+            "url": "https://note.com/workmind_jp/n/n856bdeca4f6a",
+            "creator_name": "WorkMind公式note",
+            "creator_url": "https://note.com/workmind_jp",
+            "price": null,
+            "like_count": 8
+          },
+          {
+            "rank": 3,
+            "title": "【カスハラ義務化】2026年10月から、全事業主が対象です",
+            "url": "https://note.com/just_letbe/n/nccc9c5f52b85",
+            "creator_name": "ユア@顧問弁護士",
+            "creator_url": "https://note.com/just_letbe",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 4,
+            "title": "【テンプレート配布】2026年10月カスハラ義務化に、社名を入れるだけで間に合わせる社内文書7点",
+            "url": "https://note.com/brainy_donkey610/n/n54004afa9338",
+            "creator_name": "AI＆投資研究家",
+            "creator_url": "https://note.com/brainy_donkey610",
+            "price": "¥9,500",
+            "like_count": null
+          },
+          {
+            "rank": 5,
+            "title": "顧問先から3本まとめて聞かれる。10月施行をAIで整理する手順",
+            "url": "https://note.com/shikumiya_genki/n/nc5e08ceb0244",
+            "creator_name": "仕組み屋ゲンキ",
+            "creator_url": "https://note.com/shikumiya_genki",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 6,
+            "title": "16 ｜カスハラ対策義務化直前、ヌケモレ総点検【施行前１０項目チェック付】",
+            "url": "https://note.com/masuda_asami/n/n9d4982c4fcd4",
+            "creator_name": "益田麻実｜クレーム対応・カスハラ対策コンサルタント",
+            "creator_url": "https://note.com/masuda_asami",
+            "price": "¥280",
+            "like_count": null
+          },
+          {
+            "rank": 7,
+            "title": "義務化まであと2カ月。カスハラ対策、どこから手をつけるかを順番に並べてみました",
+            "url": "https://note.com/manebi_official/n/n80f5076c371f",
+            "creator_name": "株式会社manebi",
+            "creator_url": "https://note.com/manebi_official",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 8,
+            "title": "2026年10月義務化｜小さな会社が今やるカスハラ・求職者セクハラ対策",
+            "url": "https://note.com/pluskanzaki/n/nf9776fc145ce",
+            "creator_name": "神崎ようこ｜管理職試験と職場づくり",
+            "creator_url": "https://note.com/pluskanzaki",
+            "price": "¥980",
+            "like_count": 1
+          },
+          {
+            "rank": 9,
+            "title": "【2026年10月カスハラ義務化】小さな会社がまず作る「実務セット」",
+            "url": "https://note.com/papajp/n/n3ea5892e873d",
+            "creator_name": "papajp",
+            "creator_url": "https://note.com/papajp",
+            "price": "¥500",
+            "like_count": null
+          },
+          {
+            "rank": 10,
+            "title": "【美容室向け完全版】2026年10月カスハラ対策キット｜方針・返金対応・スタッフ研修",
+            "url": "https://note.com/smallbiz_kit/n/n3ede92b19756",
+            "creator_name": "小さなお店のカスハラ対策室",
+            "creator_url": "https://note.com/smallbiz_kit",
+            "price": "¥2,980",
+            "like_count": 1
+          },
+          {
+            "rank": 11,
+            "title": "義務化まで30日。製造業・建設業のカスハラ対策、何から始めますか？",
+            "url": "https://note.com/yoshimirai/n/n5f8dce007bc7",
+            "creator_name": "田澤良行.@7000名以上とハラスメントに関わった実績×書籍出版×MBA",
+            "creator_url": "https://note.com/yoshimirai",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 12,
+            "title": "2026年10月のカスハラ義務化、既存のハラスメント防止規程の「直すべき条項」をClaude Codeに出させてみた",
+            "url": "https://note.com/yuji_ai_tool/n/nbc6c3fda1eea",
+            "creator_name": "Yuji｜業務効率化ツール開発",
+            "creator_url": "https://note.com/yuji_ai_tool",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 13,
+            "title": "10月1日からカスハラ対策が義務になります。厚労省の10項目を読んで、ツールで代われるものは1つも無いと分かりました",
+            "url": "https://note.com/netbot_jp/n/n1cad9e90591d",
+            "creator_name": "NetBot｜AIチャットボット",
+            "creator_url": "https://note.com/netbot_jp",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 14,
+            "title": "カスハラ対策を就業規則にどう書くか。条文の型と手続き",
+            "url": "https://note.com/kamigakari/n/n1321d537be47",
+            "creator_name": "kamigakari",
+            "creator_url": "https://note.com/kamigakari",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 15,
+            "title": "【2026年10月1日施行】カスハラ対策が全事業主に義務化。中小企業も猶予なし、10月までに揃える「5つの措置」完全ガイド",
+            "url": "https://note.com/famous_elk8595/n/n00faf14b0e1e",
+            "creator_name": "ぶんた｜法律・行政ネタ配信",
+            "creator_url": "https://note.com/famous_elk8595",
+            "price": "¥300〜",
+            "like_count": 2
+          },
+          {
+            "rank": 16,
+            "title": "「カスハラ相談窓口を作ったので、10月対応は終わりですよね？」施行前に法務が確認する4つのこと",
+            "url": "https://note.com/fujita_legal_ai/n/nd96ca52d2e32",
+            "creator_name": "藤田｜法務・ブログ・学習×AI",
+            "creator_url": "https://note.com/fujita_legal_ai",
+            "price": "¥100",
+            "like_count": null
+          },
+          {
+            "rank": 17,
+            "title": "カスハラと就活セクハラ、規程のどこに足すか",
+            "url": "https://note.com/senbikiya/n/nec9b4be9ad98",
+            "creator_name": "線引屋",
+            "creator_url": "https://note.com/senbikiya",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 18,
+            "title": "10月1日から変わるのは「カスハラ」だけではない。人事が見落としやすい「採用現場」の新ルール",
+            "url": "https://note.com/takuma9504/n/nb45b4d5e31eb",
+            "creator_name": "採用の裏側を知る人・キリュウ｜就活・転職・人事",
+            "creator_url": "https://note.com/takuma9504",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 19,
+            "title": "2026年10月からカスハラ対策が「全企業で義務化」——中小企業が最低限やるべき3つのこと",
+            "url": "https://note.com/aimakerlab/n/nbdda87dfdc3f",
+            "creator_name": "AI Maker Lab",
+            "creator_url": "https://note.com/aimakerlab",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 20,
+            "title": "クレーマーに詰められたあの日、担当者を救ったのは「断る権利」ではなかった",
+            "url": "https://note.com/jinjijitsumu/n/n4398144ca554",
+            "creator_name": "管理部門の実務設計室",
+            "creator_url": "https://note.com/jinjijitsumu",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 21,
+            "title": "【そのまま使える規程例付】2026年10月就活セクハラ義務化の対応手順",
+            "url": "https://note.com/lavorsjsince08/n/n244ce22c8c53",
+            "creator_name": "人事労務ブリーフィング｜5分でわかる人事労務のいま",
+            "creator_url": "https://note.com/lavorsjsince08",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 22,
+            "title": "【有料】会議メモ→タスク一覧 完全実装ガイド ― 指示文全文・確認表・リカバリ手順つき",
+            "url": "https://note.com/hot_condor5974/n/na073b1e5ea80",
+            "creator_name": "たくしん",
+            "creator_url": "https://note.com/hot_condor5974",
+            "price": "¥1,480",
+            "like_count": null
+          },
+          {
+            "rank": 23,
+            "title": "社内規程と就業規則改定の「たたき台」を、社労士に見せる前にAIで下書きする。",
+            "url": "https://note.com/jimucost_room/n/n62401c471a26",
+            "creator_name": "中小企業の事務コスト削減室",
+            "creator_url": "https://note.com/jimucost_room",
+            "price": "¥1,480",
+            "like_count": null
+          },
+          {
+            "rank": 24,
+            "title": "経営者のための採用〜入社90日チェックリスト（実務版）",
+            "url": "https://note.com/gay_otter2889/n/nbd47e5f95d59",
+            "creator_name": "経営人事さん",
+            "creator_url": "https://note.com/gay_otter2889",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 25,
+            "title": "【数字で測る　第6回】9類型　10月から、国が「カスハラ」の線を引く",
+            "url": "https://note.com/japonomics/n/na4115c0c4f99",
+            "creator_name": "Japonomics｜数字を確かめる",
+            "creator_url": "https://note.com/japonomics",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 26,
+            "title": "改訂のどこが変わったか分かる｜Claudeで規程・マニュアルの差分整理",
+            "url": "https://note.com/syunsaku_asada/n/n0be4fe8650e7",
+            "creator_name": "浅田俊作",
+            "creator_url": "https://note.com/syunsaku_asada",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 27,
+            "title": "10月1日から、カスハラ対策は全事業主の義務です。小さい会社に猶予はありません",
+            "url": "https://note.com/ojinokojo/n/n4d8ee8f343a2",
+            "creator_name": "おじの向上",
+            "creator_url": "https://note.com/ojinokojo",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 28,
+            "title": "AI出力を直した理由を残す「差分レビュー・版管理キット」【4成果物】",
+            "url": "https://note.com/cheeky_falcon949/n/neb85937dbf7d",
+            "creator_name": "Quiet Systems Press",
+            "creator_url": "https://note.com/cheeky_falcon949",
+            "price": "¥980",
+            "like_count": null
+          },
+          {
+            "rank": 29,
+            "title": "2026年10月から義務化。小さな会社が先に決めたい「カスハラ対策」10項目",
+            "url": "https://note.com/shiratakioec/n/nde4c499c88cf",
+            "creator_name": "まよち",
+            "creator_url": "https://note.com/shiratakioec",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 30,
+            "title": "カスハラ対応マニュアルに絶対書くべき5項目",
+            "url": "https://note.com/right_quoll9367/n/n7b32e6c1bdff",
+            "creator_name": "たくな｜元白バイ隊員が教える交通ルール",
+            "creator_url": "https://note.com/right_quoll9367",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 31,
+            "title": "【オフィス移転ITテンプレート】現調・見積比較・受入を1案件で追う｜PDF12ページ＋XLSX5シート",
+            "url": "https://note.com/hikitsugi_lab/n/n90503cd3b908",
+            "creator_name": "引き継ぎ設計室｜小さなチーム",
+            "creator_url": "https://note.com/hikitsugi_lab",
+            "price": "¥2,980",
+            "like_count": null
+          },
+          {
+            "rank": 32,
+            "title": "2026年10月施行！カスハラ対策義務化",
+            "url": "https://note.com/tender_toad5379/n/n6445219615c4",
+            "creator_name": "高橋/社労士　となりのブレイン",
+            "creator_url": "https://note.com/tender_toad5379",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 33,
+            "title": "カスハラ対策義務化まで残り3ヶ月。まだ何もしていない会社は、何から始めればいい？",
+            "url": "https://note.com/sharoshiengineer/n/nfd502b879571",
+            "creator_name": "社労士エンジニア",
+            "creator_url": "https://note.com/sharoshiengineer",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 34,
+            "title": "AI利用ルール『初版の叩き台』90分作成キット",
+            "url": "https://note.com/safe_gerbil4025/n/nc57f887e03f3",
+            "creator_name": "Rikuto｜Claude Code運用中",
+            "creator_url": "https://note.com/safe_gerbil4025",
+            "price": "¥2,980",
+            "like_count": 15
+          },
+          {
+            "rank": 35,
+            "title": "【2026年最新】労働安全衛生法の従業員50人基準｜衛生管理者・産業医を14日以内に選任する実務",
+            "url": "https://note.com/anzen_ai_jp/n/n4f2c7f1b7794",
+            "creator_name": "安全AI編集部",
+            "creator_url": "https://note.com/anzen_ai_jp",
+            "price": "¥300",
+            "like_count": null
+          },
+          {
+            "rank": 36,
+            "title": "業務ルールを30日で整える実践パック｜作成・例外・改定・定着まで",
+            "url": "https://note.com/marunage_shacho/n/ne958992e2f00",
+            "creator_name": "まるなげ社長",
+            "creator_url": "https://note.com/marunage_shacho",
+            "price": "¥1,500",
+            "like_count": null
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-n048878ee7064",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "n048878ee7064",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": false,
+        "items": [
+          {
+            "rank": 1,
+            "title": "会社のAI利用ルールで決める6項目とそのまま使えるひな形",
+            "url": "https://note.com/aaconsulting/n/nfe676864ef57",
+            "creator_name": "日本一相談の多いFP富山俊太郎",
+            "creator_url": "https://note.com/aaconsulting",
+            "price": "¥350",
+            "like_count": 2
+          },
+          {
+            "rank": 2,
+            "title": "AI利用のルールがない職場で、最初に決めたいこと──禁止事項を増やす前に、現場が迷わない基準を作る",
+            "url": "https://note.com/cool_rose1483/n/n78c6ddabb5b4",
+            "creator_name": "win-rink 2026",
+            "creator_url": "https://note.com/cool_rose1483",
+            "price": null,
+            "like_count": 5
+          },
+          {
+            "rank": 3,
+            "title": "「AIを使っていい会社」に必要な、社内AI利用ガイドラインの作り方",
+            "url": "https://note.com/yutas_dev/n/n80f02f041f1f",
+            "creator_name": "Yutas｜まちのAI推進室",
+            "creator_url": "https://note.com/yutas_dev",
+            "price": "¥1,980",
+            "like_count": 1
+          },
+          {
+            "rank": 4,
+            "title": "生成AI利用ガイドラインの作り方と5つの決め事",
+            "url": "https://note.com/daikidomon/n/nc5b6f41513fd",
+            "creator_name": "土門大貴/daikidomon",
+            "creator_url": "https://note.com/daikidomon",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 5,
+            "title": "生成AIの社内ルールはこれで作れる｜日本の最新ガイドラインを実務へ落とす7項目",
+            "url": "https://note.com/ai_create_sho/n/n9fbfe825ab6d",
+            "creator_name": "AI情報屋 sho｜AI実践・検証",
+            "creator_url": "https://note.com/ai_create_sho",
+            "price": "¥700",
+            "like_count": 1
+          },
+          {
+            "rank": 6,
+            "title": "【導入事例シリーズ】社内のAI利用ルールを1枚だけ作る。作り方はAIに聞いて、判断は自社で決める",
+            "url": "https://note.com/susumuwork/n/nf8699c533e30",
+            "creator_name": "ススムワーク",
+            "creator_url": "https://note.com/susumuwork",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 7,
+            "title": "「ChatGPT、これ会社で使って大丈夫？」に答えられますか？AIを禁止する前に、会社が決めておきたい最低限のルール",
+            "url": "https://note.com/bold_emu296/n/nc120a22795f2",
+            "creator_name": "朱李",
+            "creator_url": "https://note.com/bold_emu296",
+            "price": "¥300〜",
+            "like_count": 7
+          },
+          {
+            "rank": 8,
+            "title": "中小企業の生成AI利用規程ひな形｜条文・判断フロー・説明原稿つき（Word・Excel 4点）",
+            "url": "https://note.com/yunta_fukurou/n/n99447ef8db43",
+            "creator_name": "梟 〜GLEANINGS〜",
+            "creator_url": "https://note.com/yunta_fukurou",
+            "price": "¥2,480",
+            "like_count": 1
+          },
+          {
+            "rank": 9,
+            "title": "AIに入れてよい情報・入れてはいけない情報リスト：小さな会社向け最低限チェック",
+            "url": "https://note.com/ai_gyomu_hojo/n/nd5f605d9c8b5",
+            "creator_name": "AI業務補助室",
+            "creator_url": "https://note.com/ai_gyomu_hojo",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 10,
+            "title": "会社で使えるAIが決まらない状態を防ぐチェックリスト",
+            "url": "https://note.com/mtta61124/n/n871a00b73f20",
+            "creator_name": "sakanosuke",
+            "creator_url": "https://note.com/mtta61124",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 11,
+            "title": "ChatGPTやCopilotを会社で使うなら、「AI台帳」に何を記録するか",
+            "url": "https://note.com/anis_no_login/n/n172a087f0d66",
+            "creator_name": "ANIS｜Security Educator",
+            "creator_url": "https://note.com/anis_no_login",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 12,
+            "title": "「この資料、ChatGPTに貼っていい？」で毎回止まる30代会社員へ｜社内ルール×普段の資料を30分で照合する「AI入力判定シート」",
+            "url": "https://note.com/30_nayami_labo/n/n817d55e9f7ca",
+            "creator_name": "30代から人生を変えた男",
+            "creator_url": "https://note.com/30_nayami_labo",
+            "price": "¥100〜",
+            "like_count": 2
+          },
+          {
+            "rank": 13,
+            "title": "AI活用を始める前に、使ってはいけない場面を決める",
+            "url": "https://note.com/ricky2020/n/na507337c6caf",
+            "creator_name": "長谷川 りき",
+            "creator_url": "https://note.com/ricky2020",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 14,
+            "title": "生成AIの稟議書、情シスと上司が見ている7項目",
+            "url": "https://note.com/hakutane/n/n1072ccf1812c",
+            "creator_name": "AI時代の働き方｜これは任せて、わたしはこっち。",
+            "creator_url": "https://note.com/hakutane",
+            "price": "¥500",
+            "like_count": 3
+          },
+          {
+            "rank": 15,
+            "title": "AIに任せていい仕事、だめな仕事｜人の確認を残す6項目の役割分担表",
+            "url": "https://note.com/singularity45/n/n53fdd608623a",
+            "creator_name": "ジリツテキッズ｜AIと仕事・事業の実験",
+            "creator_url": "https://note.com/singularity45",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 16,
+            "title": "ChatGPTを社内導入する前に決める7つのルール｜情報漏えい・誤回答を防ぐ",
+            "url": "https://note.com/safe_ruff2294/n/ned23c4b755dc",
+            "creator_name": "PRACTICAL AI LAB",
+            "creator_url": "https://note.com/safe_ruff2294",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 17,
+            "title": "承認・禁止・グレーゾーンを一枚に:ClaudeでAI利用規程と運用台帳を同時に作る",
+            "url": "https://note.com/innoovio/n/nc1e75794173a",
+            "creator_name": "INNOOV(イノーブ)株式会社",
+            "creator_url": "https://note.com/innoovio",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 18,
+            "title": "会社資料をAIに貼る前に、「渡していい情報表」を1枚作る",
+            "url": "https://note.com/aikenyujo_siroto/n/nc87572448d4c",
+            "creator_name": "アラサーAI研究所｜AI実務テンプレート",
+            "creator_url": "https://note.com/aikenyujo_siroto",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 19,
+            "title": "「AIは使っていい」で止まっていませんか｜現場が迷わないAI利用規程のつくり方",
+            "url": "https://note.com/kamurogi_lab/n/n5042ed7741f5",
+            "creator_name": "冠城研究所｜法務×経営",
+            "creator_url": "https://note.com/kamurogi_lab",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 20,
+            "title": "ChatGPTの使い方を人によってバラバラにしない",
+            "url": "https://note.com/toushi51/n/nfb8851b2c38a",
+            "creator_name": "実践改善ラボ",
+            "creator_url": "https://note.com/toushi51",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 21,
+            "title": "仕事のAIツール、増えすぎていませんか？｜まとめて使う前の運用チェック",
+            "url": "https://note.com/chodoii_mono/n/nde49cc485fda",
+            "creator_name": "オーちゃん｜ちょうどいいモノ案内",
+            "creator_url": "https://note.com/chodoii_mono",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 22,
+            "title": "Claude週報#2 ⑥/⑥｜上司に出す「生成AIルール1枚」の作り方",
+            "url": "https://note.com/good_nerine619/n/n2e2c4009ce4b",
+            "creator_name": "アポロ",
+            "creator_url": "https://note.com/good_nerine619",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 23,
+            "title": "公開特許　組織規程に基づく生成AI入力情報の判定方法、情報処理システム及びプログラム",
+            "url": "https://note.com/mute_rue460/n/n8267949b85ed",
+            "creator_name": "lani",
+            "creator_url": "https://note.com/mute_rue460",
+            "price": null,
+            "like_count": 7
+          },
+          {
+            "rank": 24,
+            "title": "ChatGPTに毎回説明するのをやめる。「自分専用AI仕事マニュアル」の作り方",
+            "url": "https://note.com/dapper_emu3654/n/n9406ade08b38",
+            "creator_name": "ショウ",
+            "creator_url": "https://note.com/dapper_emu3654",
+            "price": "¥300",
+            "like_count": 1
+          },
+          {
+            "rank": 25,
+            "title": "AI利用ルール『初版の叩き台』90分作成キット",
+            "url": "https://note.com/safe_gerbil4025/n/nc57f887e03f3",
+            "creator_name": "Rikuto｜Claude Code運用中",
+            "creator_url": "https://note.com/safe_gerbil4025",
+            "price": "¥2,980",
+            "like_count": 15
+          },
+          {
+            "rank": 26,
+            "title": "AIに仕事を任せる前に、先に決める4つのこと",
+            "url": "https://note.com/jirein/n/n4a2f067be2bd",
+            "creator_name": "W.co｜AI実務と団体運営",
+            "creator_url": "https://note.com/jirein",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 27,
+            "title": "AIを仕事で使う前に決めたい3つの境界線｜迷わない利用ルール",
+            "url": "https://note.com/fukugyo_success/n/n2ceb0efe0966",
+            "creator_name": "副業成功OS｜AI仕事効率化",
+            "creator_url": "https://note.com/fukugyo_success",
+            "price": null,
+            "like_count": 5
+          },
+          {
+            "rank": 28,
+            "title": "【編集用テンプレート付き】中小企業の生成AI社内ルール完全版｜個人情報・著作権・事故対応まで",
+            "url": "https://note.com/holy_beetle8467/n/nc4e1156ee8e0",
+            "creator_name": "佐藤健一フォロバ100%",
+            "creator_url": "https://note.com/holy_beetle8467",
+            "price": "¥4,980",
+            "like_count": 17
+          },
+          {
+            "rank": 29,
+            "title": "AIに社内情報を入力する前に決める3つのルール",
+            "url": "https://note.com/rapid_fowl9873/n/n0c6b3f3af655",
+            "creator_name": "ITフロンティア",
+            "creator_url": "https://note.com/rapid_fowl9873",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 30,
+            "title": "生成AI利用規程、全12条をコピペで。業種別チェックリスト+ヒアリングシート付き実務テンプレート",
+            "url": "https://note.com/yuusi_912/n/nf48ff131944c",
+            "creator_name": "motionです",
+            "creator_url": "https://note.com/yuusi_912",
+            "price": "¥3,000",
+            "like_count": 1
+          },
+          {
+            "rank": 31,
+            "title": "AIに会社を1週間任せてみて分かった、暴走させないための運用ルール一式(コピペで使えるテンプレート付き)",
+            "url": "https://note.com/silver_chimpan/n/nf729a4ed0d2c",
+            "creator_name": "アルメス | AI CEOが0円から起業→収益化に挑戦中",
+            "creator_url": "https://note.com/silver_chimpan",
+            "price": "¥400",
+            "like_count": 4
+          },
+          {
+            "rank": 32,
+            "title": "【5分】社内で生成AIを使う前に確認する3つのこと\"",
+            "url": "https://note.com/ls_laboratory/n/n3e186daeef82",
+            "creator_name": "人生戦略研究所",
+            "creator_url": "https://note.com/ls_laboratory",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 33,
+            "title": "3ヶ月の完璧な規程より、生成AI推進担当が選んだ「2週間の1枚」",
+            "url": "https://note.com/yuzulemon1/n/n646c3e5c7a92",
+            "creator_name": "野口侑渡 │ 本当に仕事で使えるAI活用法",
+            "creator_url": "https://note.com/yuzulemon1",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 34,
+            "title": "AIがもたらすエンジニアの役割変革ーAIブームはエンジニアにとって幸せなのか ",
+            "url": "https://style.medpeer.co.jp/n/n4d2b669b6dd4",
+            "creator_name": "メドピアのnote",
+            "creator_url": "https://style.medpeer.co.jp/",
+            "price": null,
+            "like_count": 194
+          },
+          {
+            "rank": 35,
+            "title": "社長から新入社員まで！カバンの中身を覗いてみたら、人間味が溢れまくっていた",
+            "url": "https://note.com/fhc_pr/n/n99883ef9c2d9",
+            "creator_name": "株式会社船井総研ヒューマンキャピタルコンサルティング",
+            "creator_url": "https://note.com/fhc_pr",
+            "price": null,
+            "like_count": 237
+          },
+          {
+            "rank": 36,
+            "title": "Redditを使って、初期のグローバルユーザー1,000人を獲得した話",
+            "url": "https://note.com/naomike/n/ne28b27880760",
+            "creator_name": "Nao Yukawa",
+            "creator_url": "https://note.com/naomike",
+            "price": null,
+            "like_count": 150
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "note-article-n4fc7bade511f",
+      "service": "note",
+      "page_type": "article",
+      "public_id": "n4fc7bade511f",
+      "discovery_presence": "DISCOVERED_NOW",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": {
+        "collection_status": "OK",
+        "failure_reason": null,
+        "failure_stage": null,
+        "attempts": [
+          {
+            "attempt": 1,
+            "collection_status": "OK",
+            "desktop_settle": "POPULATED",
+            "mobile_settle": "POPULATED"
+          }
+        ],
+        "surface_label": "こちらもおすすめ",
+        "surface_model": "UNKNOWN",
+        "canonical_viewport": "desktop",
+        "review_depth": 36,
+        "classification_method": "OTHER",
+        "cluster_taxonomy_version": "UNCLASSIFIED-v0",
+        "comparison_status": "COMPARABLE",
+        "desktop_item_count": 36,
+        "mobile_item_count": 36,
+        "mirror_consistent": false,
+        "items": [
+          {
+            "rank": 1,
+            "title": "会社のAI利用ルールで決める6項目とそのまま使えるひな形",
+            "url": "https://note.com/aaconsulting/n/nfe676864ef57",
+            "creator_name": "日本一相談の多いFP富山俊太郎",
+            "creator_url": "https://note.com/aaconsulting",
+            "price": "¥350",
+            "like_count": 2
+          },
+          {
+            "rank": 2,
+            "title": "AI利用ルール『初版の叩き台』90分作成キット",
+            "url": "https://note.com/safe_gerbil4025/n/nc57f887e03f3",
+            "creator_name": "Rikuto｜Claude Code運用中",
+            "creator_url": "https://note.com/safe_gerbil4025",
+            "price": "¥2,980",
+            "like_count": 15
+          },
+          {
+            "rank": 3,
+            "title": "生成AI社内導入スターターキット｜規程だけでなく、「なぜその規程か」まで揃った7点セット",
+            "url": "https://note.com/ai_shanai_lab/n/n1e82562232fc",
+            "creator_name": "AI活用ラボ",
+            "creator_url": "https://note.com/ai_shanai_lab",
+            "price": "¥2,480",
+            "like_count": 1
+          },
+          {
+            "rank": 4,
+            "title": "「AIのルール作って」と言われた日に読むnote",
+            "url": "https://note.com/pyrite_atoz/n/n4fffe4a1fabf",
+            "creator_name": "SONOTENOTE",
+            "creator_url": "https://note.com/pyrite_atoz",
+            "price": "¥100",
+            "like_count": 2
+          },
+          {
+            "rank": 5,
+            "title": "「AIを使っていい会社」に必要な、社内AI利用ガイドラインの作り方",
+            "url": "https://note.com/yutas_dev/n/n80f02f041f1f",
+            "creator_name": "Yutas｜まちのAI推進室",
+            "creator_url": "https://note.com/yutas_dev",
+            "price": "¥1,980",
+            "like_count": 1
+          },
+          {
+            "rank": 6,
+            "title": "AI業務自動化スターター設計書｜要件整理・テスト・人間確認まで、このまま使える実務テンプレート",
+            "url": "https://note.com/open_knot9715/n/n0a61999df973",
+            "creator_name": "中小企業向け×業務AI実装ノート",
+            "creator_url": "https://note.com/open_knot9715",
+            "price": "¥980",
+            "like_count": 3
+          },
+          {
+            "rank": 7,
+            "title": "【導入事例シリーズ】社内のAI利用ルールを1枚だけ作る。作り方はAIに聞いて、判断は自社で決める",
+            "url": "https://note.com/susumuwork/n/nf8699c533e30",
+            "creator_name": "ススムワーク",
+            "creator_url": "https://note.com/susumuwork",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 8,
+            "title": "3ヶ月の完璧な規程より、生成AI推進担当が選んだ「2週間の1枚」",
+            "url": "https://note.com/yuzulemon1/n/n646c3e5c7a92",
+            "creator_name": "野口侑渡 │ 本当に仕事で使えるAI活用法",
+            "creator_url": "https://note.com/yuzulemon1",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 9,
+            "title": "中小企業の生成AI利用規程ひな形｜条文・判断フロー・説明原稿つき（Word・Excel 4点）",
+            "url": "https://note.com/yunta_fukurou/n/n99447ef8db43",
+            "creator_name": "梟 〜GLEANINGS〜",
+            "creator_url": "https://note.com/yunta_fukurou",
+            "price": "¥2,480",
+            "like_count": 1
+          },
+          {
+            "rank": 10,
+            "title": "生成AI利用ガイドラインの作り方と5つの決め事",
+            "url": "https://note.com/daikidomon/n/nc5b6f41513fd",
+            "creator_name": "土門大貴/daikidomon",
+            "creator_url": "https://note.com/daikidomon",
+            "price": null,
+            "like_count": 2
+          },
+          {
+            "rank": 11,
+            "title": "AI社員3人スターターセット｜ChatGPT・Claudeで企画・執筆・販売導線を支援するプロンプト",
+            "url": "https://note.com/ai_forward_log/n/n97dfa180f9e6",
+            "creator_name": "AI社員3人で副業実験｜AIで前に進む記録",
+            "creator_url": "https://note.com/ai_forward_log",
+            "price": "¥980",
+            "like_count": 11
+          },
+          {
+            "rank": 12,
+            "title": "AIの利用ルールが作れない状態を解決する方法",
+            "url": "https://note.com/mtta61124/n/n1c1c1c430380",
+            "creator_name": "sakanosuke",
+            "creator_url": "https://note.com/mtta61124",
+            "price": "¥500",
+            "like_count": null
+          },
+          {
+            "rank": 13,
+            "title": "【コピペで30分導入】Claude Codeを「AI社員」化するCLAUDE.md完全テンプレート｜毎回の説明ゼロで、出力がブレない仕事環境の作り方",
+            "url": "https://note.com/soyokaze2/n/nd5616b57b691",
+            "creator_name": "そよ風",
+            "creator_url": "https://note.com/soyokaze2",
+            "price": "¥990",
+            "like_count": 2
+          },
+          {
+            "rank": 14,
+            "title": "AI動画を15秒・3カットの完成物にする実務キット【PDF・Excel・指示文7種】",
+            "url": "https://note.com/calm_daphne9475/n/naadfc4387471",
+            "creator_name": "60秒編集室｜AI動画の作り方",
+            "creator_url": "https://note.com/calm_daphne9475",
+            "price": "¥1,980",
+            "like_count": null
+          },
+          {
+            "rank": 15,
+            "title": "AI推進を、ひとりで抱えすぎないために。DX推進担当者のための「AI活用定着30日実務キット」",
+            "url": "https://note.com/kind_lilac615/n/ncf315cb2406b",
+            "creator_name": "金リパさんやで(prl4125)",
+            "creator_url": "https://note.com/kind_lilac615",
+            "price": "¥500",
+            "like_count": 2
+          },
+          {
+            "rank": 16,
+            "title": "【コピペOK】社内AI勉強会キット(30分版)— 「導入したのに使われない」を防ぐ最初の一手",
+            "url": "https://note.com/genten_kei/n/n9360dbde15ad",
+            "creator_name": "原典ケイ｜AIエージェント実務",
+            "creator_url": "https://note.com/genten_kei",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 17,
+            "title": "承認・禁止・グレーゾーンを一枚に:ClaudeでAI利用規程と運用台帳を同時に作る",
+            "url": "https://note.com/innoovio/n/nc1e75794173a",
+            "creator_name": "INNOOV(イノーブ)株式会社",
+            "creator_url": "https://note.com/innoovio",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 18,
+            "title": "小さな会社のAI入力・確認ルール作成キット",
+            "url": "https://note.com/fit_snail9195/n/nb8567594a862",
+            "creator_name": "wolf | AI研究機関",
+            "creator_url": "https://note.com/fit_snail9195",
+            "price": "¥2,980",
+            "like_count": 1
+          },
+          {
+            "rank": 19,
+            "title": "AI社員とつくる一人会社: AI-Platform OS設立記録",
+            "url": "https://note.com/new_pontarou/n/n630e5ca2238c",
+            "creator_name": "ぽんじろう",
+            "creator_url": "https://note.com/new_pontarou",
+            "price": "¥300",
+            "like_count": 4
+          },
+          {
+            "rank": 20,
+            "title": "団体ルールを60分で整理する｜AIプロンプト＋会費・役割・変更手続きの実践キット",
+            "url": "https://note.com/jirein/n/nea6e104bdff5",
+            "creator_name": "W.co｜AI実務と団体運営",
+            "creator_url": "https://note.com/jirein",
+            "price": "¥300",
+            "like_count": 1
+          },
+          {
+            "rank": 21,
+            "title": "Claude週報#2 ⑥/⑥｜上司に出す「生成AIルール1枚」の作り方",
+            "url": "https://note.com/good_nerine619/n/n2e2c4009ce4b",
+            "creator_name": "アポロ",
+            "creator_url": "https://note.com/good_nerine619",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 22,
+            "title": "たった1人でも会社のように仕事が回るAI役員と専門部署の作り方・動かし方",
+            "url": "https://note.com/selfseed/n/n0e4284d2a2d4",
+            "creator_name": "服部ユウ",
+            "creator_url": "https://note.com/selfseed",
+            "price": "¥14,800",
+            "like_count": 4
+          },
+          {
+            "rank": 23,
+            "title": "AIへ仕事を頼んでも「結局どうなった？」を減らす事業運営テンプレート",
+            "url": "https://note.com/ai_ceo_john/n/n13794e9e1b3a",
+            "creator_name": "AI事業本部｜JohnとAI社員",
+            "creator_url": "https://note.com/ai_ceo_john",
+            "price": "¥2,980",
+            "like_count": null
+          },
+          {
+            "rank": 24,
+            "title": "【無料配布】中小企業の経理がAIに仕事を渡すまで──教科書の最初の20ページを、そのまま置いていきます",
+            "url": "https://note.com/aibuka/n/n1b1a81ffcbe1",
+            "creator_name": "ていじ｜AIを部下にする",
+            "creator_url": "https://note.com/aibuka",
+            "price": null,
+            "like_count": 25
+          },
+          {
+            "rank": 25,
+            "title": "【完全保存版】AI活用ロードマップ〜選び方からプロンプト、副業の始め方まで全部盛り〜",
+            "url": "https://note.com/sin2026/n/ndc4ad85b99e5",
+            "creator_name": "零レイ",
+            "creator_url": "https://note.com/sin2026",
+            "price": "¥240",
+            "like_count": 1
+          },
+          {
+            "rank": 26,
+            "title": "AI会社1DAYナビ",
+            "url": "https://note.com/aiha_channel357/n/n993d09694a86",
+            "creator_name": "aiha",
+            "creator_url": "https://note.com/aiha_channel357",
+            "price": null,
+            "like_count": 4
+          },
+          {
+            "rank": 27,
+            "title": "【コピペひな形付き】社員向けAI利用ルールをA4一枚にまとめるコツ",
+            "url": "https://note.com/holy_beetle8467/n/ndfdf4a887c6a",
+            "creator_name": "佐藤健一フォロバ100%",
+            "creator_url": "https://note.com/holy_beetle8467",
+            "price": "¥1,980",
+            "like_count": 4
+          },
+          {
+            "rank": 28,
+            "title": "社内規程と就業規則改定の「たたき台」を、社労士に見せる前にAIで下書きする。",
+            "url": "https://note.com/jimucost_room/n/n62401c471a26",
+            "creator_name": "中小企業の事務コスト削減室",
+            "creator_url": "https://note.com/jimucost_room",
+            "price": "¥1,480",
+            "like_count": null
+          },
+          {
+            "rank": 29,
+            "title": "はじめてのAI仕事術｜ChatGPTを使って、書く・まとめる・伝えるを仕事で試す",
+            "url": "https://note.com/wise_rue7256/n/n5963dcf9ffe3",
+            "creator_name": "ADELNIO LAB",
+            "creator_url": "https://note.com/wise_rue7256",
+            "price": "¥980",
+            "like_count": null
+          },
+          {
+            "rank": 30,
+            "title": "「この資料、ChatGPTに貼っていい？」で毎回止まる30代会社員へ｜社内ルール×普段の資料を30分で照合する「AI入力判定シート」",
+            "url": "https://note.com/30_nayami_labo/n/n817d55e9f7ca",
+            "creator_name": "30代から人生を変えた男",
+            "creator_url": "https://note.com/30_nayami_labo",
+            "price": "¥100〜",
+            "like_count": 2
+          },
+          {
+            "rank": 31,
+            "title": "【情シス向け】ChatGPT社内FAQ導入の失敗を挽回。60万円の損失を防ぐDify再構築20手順",
+            "url": "https://note.com/shiodome_098/n/n99ad2939d9c7",
+            "creator_name": "しおどめ",
+            "creator_url": "https://note.com/shiodome_098",
+            "price": "¥9,800",
+            "like_count": null
+          },
+          {
+            "rank": 32,
+            "title": "作業手順書をAIで作る方法｜コピペ用プロンプトと6項目テンプレート",
+            "url": "https://note.com/r2_pc_ai/n/n5c396ed3cde7",
+            "creator_name": "R2｜PC現場のAI仕事術",
+            "creator_url": "https://note.com/r2_pc_ai",
+            "price": null,
+            "like_count": 1
+          },
+          {
+            "rank": 33,
+            "title": "AI仕事術を安全に始める4ステップ｜無料テンプレと実例まとめ",
+            "url": "https://note.com/famous_crow6980/n/na2cf796e54a0",
+            "creator_name": "AI仕事術ラボ｜実測・テンプレ・自動化",
+            "creator_url": "https://note.com/famous_crow6980",
+            "price": null,
+            "like_count": null
+          },
+          {
+            "rank": 34,
+            "title": "AIひとり会社スターター｜5人のAI社員に「今日やる仕事」まで決めてもらうテンプレート",
+            "url": "https://note.com/ai_shoryoku_lab/n/n9cb63088355a",
+            "creator_name": "AI省力ラボ",
+            "creator_url": "https://note.com/ai_shoryoku_lab",
+            "price": "¥300",
+            "like_count": 1
+          },
+          {
+            "rank": 35,
+            "title": "【AI導入の経営判断】最初の一案件を、次の経営会議へ持っていく｜浜崎正己",
+            "url": "https://note.com/masamasa11_12/n/nc565b0e7520d",
+            "creator_name": "浜崎正己@メディアインキュベート",
+            "creator_url": "https://note.com/masamasa11_12",
+            "price": null,
+            "like_count": 3
+          },
+          {
+            "rank": 36,
+            "title": "なぜぼくらは「コミュニケーション能力が低い」と言われるのか？",
+            "url": "https://note.com/dora_e_m/n/n53db9ec043b5",
+            "creator_name": "dora_e_m",
+            "creator_url": "https://note.com/dora_e_m",
+            "price": null,
+            "like_count": 141
+          }
+        ]
+      },
+      "material_error_count": 0
+    },
+    {
+      "target_id": "booth-shop",
+      "service": "booth",
+      "page_type": "shop",
+      "public_id": null,
+      "discovery_presence": "SEED",
+      "http_status": 200,
+      "capture_status": "OK",
+      "recommendation_probe": null,
+      "material_error_count": 0
+    }
+  ]
 }

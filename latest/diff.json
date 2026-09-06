@@ -1,4 +1,49 @@
 {
-  "baseline": true,
-  "targets": []
+  "baseline": false,
+  "targets": [
+    {
+      "target_id": "note-creator",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-n9c784c2644e7",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-nfff4b16b3d21",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-ndde0281889c1",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-na6608d963c15",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-n85b19b38a0bd",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-n3fbd30604a7c",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-n7ef133760bff",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-n048878ee7064",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "note-article-n4fc7bade511f",
+      "status": "NEW_TARGET"
+    },
+    {
+      "target_id": "booth-shop",
+      "status": "NEW_TARGET"
+    }
+  ]
 }
