@@ -1,0 +1,115 @@
+name: Observe public surfaces
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'config/**'
+      - 'package.json'
+      - '.github/workflows/observe.yml'
+  schedule:
+    - cron: '17 4 * * 3'
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: Observation scope
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - note
+          - booth
+          - seed-only
+
+permissions:
+  contents: write
+
+env:
+  NODE_VERSION: '22'
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    concurrency:
+      group: public-surface-observer-managed
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Check runtime target configuration
+        id: target-config
+        shell: bash
+        env:
+          OBSERVER_SEEDS_YAML: ${{ secrets.OBSERVER_SEEDS_YAML }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${OBSERVER_SEEDS_YAML:-}" ]]; then
+            echo "Managed seed secret is not configured; skipping observation without publishing empty data."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v4
+        if: steps.target-config.outputs.skip != 'true'
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: package.json
+
+      - if: steps.target-config.outputs.skip != 'true'
+        run: npm install --no-audit --no-fund
+
+      - if: steps.target-config.outputs.skip != 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Validate seed registry
+        if: steps.target-config.outputs.skip != 'true'
+        env:
+          OBSERVER_SEEDS_YAML: ${{ secrets.OBSERVER_SEEDS_YAML }}
+        run: npm run seeds:validate
+
+      - name: Capture public guest surfaces
+        if: steps.target-config.outputs.skip != 'true'
+        shell: bash
+        env:
+          INPUT_SCOPE: ${{ github.event.inputs.scope }}
+          OBSERVER_SEEDS_YAML: ${{ secrets.OBSERVER_SEEDS_YAML }}
+        run: |
+          set -euo pipefail
+          SCOPE="${INPUT_SCOPE:-all}"
+          npm run observe -- --scope "$SCOPE" --persist
+
+      - name: Persist identity-safe latest state
+        if: ${{ success() && steps.target-config.outputs.skip != 'true' && github.ref == 'refs/heads/main' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          SNAPSHOT_DIR="$(mktemp -d)"
+          trap 'rm -rf "$SNAPSHOT_DIR"' EXIT
+          cp latest/manifest.json "$SNAPSHOT_DIR/manifest.json"
+          cp latest/diff.json "$SNAPSHOT_DIR/diff.json"
+          cp latest/summary.md "$SNAPSHOT_DIR/summary.md"
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp "$SNAPSHOT_DIR/manifest.json" latest/manifest.json
+          cp "$SNAPSHOT_DIR/diff.json" latest/diff.json
+          cp "$SNAPSHOT_DIR/summary.md" latest/summary.md
+
+          git add latest/manifest.json latest/diff.json latest/summary.md
+          if git diff --cached --quiet; then
+            echo "No managed observation state changes."
+            exit 0
+          fi
+          git commit -m "data: update identity-safe public observation"
+          git push origin HEAD:main

@@ -1,0 +1,20 @@
+{
+  "name": "public-surface-observer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Guest-view Playwright observer for public note and BOOTH surfaces.",
+  "scripts": {
+    "observe": "node src/observe.mjs",
+    "seeds:validate": "node src/seeds-cli.mjs validate",
+    "seeds:list": "node src/seeds-cli.mjs list",
+    "test": "playwright test"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@playwright/test": "1.56.0",
+    "yaml": "2.9.0"
+  }
+}

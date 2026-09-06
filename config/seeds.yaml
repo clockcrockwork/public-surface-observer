@@ -1,0 +1,19 @@
+schema_version: 1
+
+# Public source control contains examples only.
+# Managed scheduled targets must be supplied at runtime through
+# the OBSERVER_SEEDS_YAML GitHub Actions secret.
+seeds:
+  - id: example-note
+    service: note
+    account_key: example
+    url: https://note.com/example
+    enabled: false
+    discover_children: true
+
+  - id: example-booth
+    service: booth
+    account_key: example
+    url: https://example.booth.pm/
+    enabled: false
+    discover_children: true

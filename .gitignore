@@ -1,0 +1,8 @@
+node_modules/
+playwright-report/
+test-results/
+artifacts/
+state/
+config/seeds.local.yaml
+.DS_Store
+package-lock.json
