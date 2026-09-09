@@ -3,47 +3,526 @@
   "targets": [
     {
       "target_id": "note-creator",
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": null
+    },
+    {
+      "target_id": "note-article-n1e78861f5abf",
       "status": "NEW_TARGET"
     },
     {
       "target_id": "note-article-n9c784c2644e7",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/ai_gyomukaikaku/n/naed58dbdf274",
+          "https://note.com/calm_dove4104/n/n0f12e1b1f747",
+          "https://note.com/yuki_ai_guide/n/na99e74685139",
+          "https://note.com/deft_serval2219/n/nf39923a1fd8a",
+          "https://note.com/aishiteru88/n/ncb20e03fcb75",
+          "https://note.com/aoponzu1031/n/n117770420915",
+          "https://note.com/aiteam_log/n/n1998d533cebc",
+          "https://note.com/mute_crane1853/n/n8542e1ec0d2d",
+          "https://note.com/hitori_sanbou/n/n0ad08e73a769",
+          "https://note.com/kaiketunote/n/nb855acb0c308",
+          "https://note.com/toya_money/n/nca6556edd5ba",
+          "https://note.com/around30monolog/n/nf10e0cbb4957",
+          "https://note.com/rapid_dog1534/n/n34d1f2c82d8a",
+          "https://note.com/benrikobo/n/nc7632f5bd70c",
+          "https://note.com/imashirube/n/n2f890e75c66d",
+          "https://note.com/ai_50dai/n/ne42aa7df981b",
+          "https://note.com/gay_walrus2233/n/nb9c586c2b8bf",
+          "https://note.com/ai_honyaku_note/n/nfc14ac1fb4b9",
+          "https://note.com/matsuda_at/n/n10ff25a6cc3a",
+          "https://note.com/hamster_hakase/n/n45a3fa216880",
+          "https://note.com/ai_katsuyo_lab/n/n059a965ea5d4",
+          "https://note.com/cool_hippo3791/n/nd9ec0923980b",
+          "https://note.com/lucid_sedum4085/n/nd07142ed4a5c",
+          "https://note.com/noa_notexai/n/n56fa24101ae1",
+          "https://note.com/charm_liger6066/n/n8771289e7c74",
+          "https://note.com/fit_snail9195/n/n370c5f81b242",
+          "https://note.com/connect_ai_keiri/n/n0409476da479",
+          "https://note.com/takayuki_sase/n/n8bc99da4be3a",
+          "https://note.com/brainy_boar4702/n/nb4c392ba3357",
+          "https://note.com/shimaken_me/n/nd38a66a477ef"
+        ],
+        "new": [
+          "https://note.com/aijitanlab365/n/n9a8a044e863a",
+          "https://note.com/smartwork_human/n/nec06dda5f3dd",
+          "https://note.com/ai_reduce_work/n/n79148f8d40f1",
+          "https://note.com/teloscompass/n/nd555bf6e8c10",
+          "https://note.com/crosst3_taichi/n/n6f823d7f7891",
+          "https://note.com/cars_mada/n/n22d4fdcc7691"
+        ],
+        "disappeared": [
+          "https://note.com/menpa_lab/n/nc8e37ab5f0b0",
+          "https://note.com/oniki_oni/n/n5a3917592b9a",
+          "https://note.com/juicy_willet9526/n/ncc9ae8b1ca4a",
+          "https://note.com/toru_ai_side/n/n2fa1d215d2cb",
+          "https://note.com/ai_income_work/n/n63f6fbcfd217",
+          "https://note.com/udzura/n/ne5653dc1b432"
+        ]
+      }
     },
     {
       "target_id": "note-article-nfff4b16b3d21",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/career_memo/n/n310e8bfbefe6",
+          "https://note.com/hikari_yumenote/n/n3d4b0cd324f3",
+          "https://note.com/webdesign/n/nd06f991f6cad",
+          "https://note.com/tkglabs/n/n8d41bb814330",
+          "https://note.com/nam_nam_nam/n/nbfeeaa3c47a6",
+          "https://note.com/crisp_iris9058/n/nf3e44c82b397",
+          "https://note.com/tender_lapo28/n/na559d85f21f0",
+          "https://note.com/sasaki_yuki_/n/n275d4bd78153",
+          "https://note.com/web_craft_77/n/n4a72804dae78",
+          "https://note.com/knwg_s05/n/n5e7a5a73d626",
+          "https://note.com/iinoo/n/n20b692aed227",
+          "https://note.com/rshadow_jp/n/nf7970fdea112",
+          "https://note.com/mogi0211/n/n82ebdc097f06",
+          "https://note.com/tamafactory/n/n4a338db8ccb2",
+          "https://note.com/dhythm/n/naf40af479330",
+          "https://note.com/romusan_n26/n/nd459842253e8",
+          "https://note.com/regalo/n/nc3bc08c0dba1",
+          "https://note.com/workredesign_st/n/n34ddba79630c",
+          "https://note.com/quadeer/n/nb43b1301bdb2",
+          "https://note.com/makahou_info/n/ned2988a68eb6",
+          "https://note.com/niche_math/n/nbfcd95e425f3",
+          "https://note.com/junk_0528/n/n5c3724686a48",
+          "https://note.com/tomoweb_lab/n/n29f547e9c6d4",
+          "https://note.com/shinkai_penguin/n/n95d5ab5ccfb2",
+          "https://note.com/firm_hornet9414/n/n7f009ec7a243",
+          "https://note.com/dokushin003/n/n3b86f40f702e",
+          "https://note.com/408ownworks/n/n74e83b82fa73",
+          "https://note.com/mochisaya/n/n202d03973d41",
+          "https://note.com/hampen2929/n/n8e567bc651da",
+          "https://note.com/rubu_/n/ne244c70f6f41",
+          "https://note.com/tojo_h/n/n4477586a1fe6",
+          "https://note.com/bright_lupine143/n/nae3a1956a798"
+        ],
+        "new": [
+          "https://note.com/manabreaker/n/n0038f8a9a92a",
+          "https://note.com/sada_ten/n/ne0767ba51947",
+          "https://note.com/brave_iguana6785/n/ne0945a9e5c10",
+          "https://note.com/a_oneko/n/na0497e0fe783"
+        ],
+        "disappeared": [
+          "https://note.com/genial_slug6733/n/nb5a3c2c41632",
+          "https://note.com/kmcn/n/nec3c786b8da0",
+          "https://note.com/quick_shark7920/n/n6cdf31f1d864",
+          "https://note.com/koki_ikegami/n/nc1051e631097"
+        ]
+      }
     },
     {
       "target_id": "note-article-ndde0281889c1",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/zero_ai_dev/n/n0fc0f017feb3",
+          "https://note.com/ngin_z/n/n1ecd28d3a81b",
+          "https://note.com/ruta_lab/n/na5b83bcdd6e4",
+          "https://note.com/mochisaya/n/n516d44c8792e",
+          "https://note.com/jazzy_bee7652/n/nab43b06f9c3b",
+          "https://note.com/proper_snail2088/n/n16dfe954f684",
+          "https://note.com/ai_kisoryoku/n/ncf835fb8b2ec",
+          "https://note.com/yamaguchi_ai_dev/n/n010a937141ab",
+          "https://note.com/zerokarahonban/n/n44c6d8c4dc77",
+          "https://note.com/newtat/n/n96bce6851a75",
+          "https://note.com/daizyken_6147/n/nf97aff71757e",
+          "https://note.com/ai_joyrushi/n/nfa91361275b3",
+          "https://note.com/unc_notes/n/n047e812eb832",
+          "https://note.com/locolisu_lab/n/nceac3968c436",
+          "https://note.com/tamafactory/n/n589cdfd35de4",
+          "https://note.com/dear_laelia8122/n/nf1ee40cef88c",
+          "https://note.com/made_from_fuji/n/nf64d2da168de",
+          "https://note.com/rom_0001/n/n2112f09cf1be",
+          "https://note.com/ta_ka_mi_ya/n/n16e226bdfe4c",
+          "https://note.com/app_take/n/n31cc3f83fd31",
+          "https://note.com/vivid_crocus8964/n/nd4b09ee8c82f",
+          "https://note.com/tasklog/n/nd665c1a078ec",
+          "https://note.com/kozue238/n/n618b553be9e2",
+          "https://note.com/lush_owl8064/n/n4c875e58b8e8",
+          "https://note.com/kurose_log/n/n5cf379d40b81",
+          "https://note.com/nguu/n/n8774de5956da",
+          "https://note.com/mojihokori_lab/n/ne24cd38c0a7b",
+          "https://note.com/decisionlog_note/n/n66f3e5065af7",
+          "https://note.com/hase0777000/n/n7594518000fa"
+        ],
+        "new": [
+          "https://note.com/nanoka2277/n/n55a74fe415bc",
+          "https://note.com/ai_builders_lab/n/nbfff6c64ee9f",
+          "https://note.com/tono_ai_notes/n/n6166939c2c85",
+          "https://note.com/motekawa/n/n9cb07574ab42",
+          "https://note.com/risumaru_4560/n/n9926eb06a80e",
+          "https://note.com/agile_sheep3810/n/nfdfe8ed9c444",
+          "https://note.com/kkosukeee/n/n99258fe1da3c"
+        ],
+        "disappeared": [
+          "https://note.com/sekkeiya_kenichi/n/ncf5306b48254",
+          "https://note.com/cool_weasel3790/n/n4bc6cd0c5d2a",
+          "https://note.com/suwash/n/nc0d95b2746d6",
+          "https://note.com/witty_bobcat6938/n/n56991bba3639",
+          "https://note.com/clean_ferret2667/n/nafd3c70ab36c",
+          "https://note.com/kurashicom_tech/n/nc170f8c5f343",
+          "https://note.com/ai_freak/n/n3d564db74a6d"
+        ]
+      }
     },
     {
       "target_id": "note-article-na6608d963c15",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/ydb_issey/n/nf4989712b336",
+          "https://note.com/signal_lens/n/n593066223619",
+          "https://note.com/afi_support/n/n96aa4e8a8b75",
+          "https://note.com/turuto/n/n2514988df032",
+          "https://note.com/alert_dove6760/n/nde72a4ba2919",
+          "https://note.com/cute_dunlin8019/n/n3db36b555f92",
+          "https://note.com/teamnekoha/n/n4b6e3aa55bc4",
+          "https://note.com/huge_ruff1150/n/nb7ac1d3c90ff",
+          "https://note.com/lost_sidejob/n/n55fdecbe6bfe",
+          "https://note.com/dailylaunch514/n/n6ee73cf2653b",
+          "https://note.com/noa_notexai/n/n875112dfc2db",
+          "https://note.com/firm_swift5456/n/ndf4bdca5894b",
+          "https://note.com/inadigital/n/n8df5f8b34d7d",
+          "https://note.com/usamiho/n/n8da7428cc491",
+          "https://note.com/namelancer/n/nc62fd971ae88",
+          "https://note.com/shizukuai/n/nfb4bb9dd766b",
+          "https://note.com/dtomida/n/n97558403bf74",
+          "https://note.com/ai__on/n/n1cccc9bae969",
+          "https://note.com/hip_emu4843/n/na9d337116e93",
+          "https://note.com/around30monolog/n/nf10e0cbb4957",
+          "https://note.com/kaomatsu_ds/n/n93c841c7a13f",
+          "https://note.com/ai_joshisu/n/n634f87e19eda",
+          "https://note.com/hitori_sanbou/n/n0ad08e73a769",
+          "https://note.com/clean_ferret2667/n/n2bea4d6e92ee",
+          "https://note.com/takayuki_sase/n/n8bc99da4be3a",
+          "https://note.com/aaconsulting/n/n67a863f2b9ae",
+          "https://note.com/sheep_ai_/n/n82b21dea6ba8",
+          "https://note.com/effectmoe/n/nc040d032c4be",
+          "https://note.com/after_ai_web/n/n40878e065217",
+          "https://note.com/matsumotot/n/nc68e7228a5b3"
+        ],
+        "new": [
+          "https://note.com/clever_turkey674/n/n67067f00696a",
+          "https://note.com/north_mate/n/n28804e0ecee6",
+          "https://note.com/ai_tamaki/n/n45d93dbba2da",
+          "https://note.com/ai_orchestra/n/nf725f31038ad",
+          "https://note.com/fouryou/n/n3902d3ea91ce",
+          "https://note.com/jisoupartners/n/n04249e1f6178"
+        ],
+        "disappeared": [
+          "https://note.com/mionohako/n/n16fe12a966aa",
+          "https://note.com/chackwill/n/nf3a5d59890a4",
+          "https://note.com/ripe_ixora5107/n/ne1431c5e993f",
+          "https://note.com/ai_tofumaru/n/n54383732112f",
+          "https://note.com/ipconnet/n/nb5981739e701",
+          "https://note.com/guilty_bc/n/nabcf2cbafef3"
+        ]
+      }
     },
     {
       "target_id": "note-article-n85b19b38a0bd",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/gay_walrus2233/n/nb9c586c2b8bf",
+          "https://note.com/jimurecipe/n/n27fe1a245878",
+          "https://note.com/ai_gyomukaikaku/n/naed58dbdf274",
+          "https://note.com/kurihara_y_dyla/n/n10b19e767ce3",
+          "https://note.com/deft_serval2219/n/nf39923a1fd8a",
+          "https://note.com/imashirube/n/n2f890e75c66d",
+          "https://note.com/safe_moraea4819/n/n6566ca9c3e71",
+          "https://note.com/30_nayami_labo/n/n1d9df7aeff69",
+          "https://note.com/reizi_production/n/n8f32c939371a",
+          "https://note.com/shigotojutsu_lab/n/nfd23e3de3f37",
+          "https://note.com/nekoharu_dx/n/nd22386410d52",
+          "https://note.com/kotatsu_ai_jadc/n/n867a91e7aa19",
+          "https://note.com/rapid_dog1534/n/n34d1f2c82d8a",
+          "https://note.com/ai_memo_room/n/n44852758508e",
+          "https://note.com/kaiketunote/n/nb855acb0c308",
+          "https://note.com/hakutane/n/n0b48270796a4",
+          "https://note.com/calm_dove4104/n/n0f12e1b1f747",
+          "https://note.com/ai_work_sindan/n/n9f36f23ad19a",
+          "https://note.com/kaomatsu_ds/n/nd48a05fef13b",
+          "https://note.com/holy_beetle8467/n/n34e88b6886f8",
+          "https://note.com/takayuki_sase/n/n8bc99da4be3a",
+          "https://note.com/aiteam_log/n/n1998d533cebc",
+          "https://note.com/aiming_shoo/n/n344b8544155c",
+          "https://note.com/dapper_emu3654/n/n133c870e22d6",
+          "https://note.com/hitori_sanbou/n/n0ad08e73a769",
+          "https://note.com/bold_emu296/n/nc120a22795f2",
+          "https://note.com/joyful_phlox2932/n/nd320510d3d9d",
+          "https://note.com/otona_aisan/n/n31dcb0e74d47",
+          "https://note.com/benrikobo/n/nc7632f5bd70c",
+          "https://note.com/fair_hornet586/n/n5d906def0658",
+          "https://note.com/teamnekoha/n/n4b6e3aa55bc4"
+        ],
+        "new": [
+          "https://note.com/nekonote_ai_lab/n/n7842a892dea7",
+          "https://note.com/clear_marten3410/n/n50e40cb9b401",
+          "https://note.com/blackbull2022/n/n664ea77ce7ec",
+          "https://note.com/ai_reduce_work/n/n79148f8d40f1",
+          "https://note.com/kentaf4/n/nb4a4d0bd8455"
+        ],
+        "disappeared": [
+          "https://note.com/lithe_garlic9697/n/na2249757687f",
+          "https://note.com/wakaru_maru/n/na921c60ce5f5",
+          "https://note.com/lively_tern358/n/ne558bb2f0d5c",
+          "https://note.com/safe_ruff2294/n/n112f5e5ce28c",
+          "https://note.com/fhc_pr/n/n99883ef9c2d9"
+        ]
+      }
     },
     {
       "target_id": "note-article-n3fbd30604a7c",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/yuji_ai_tool/n/nbc6c3fda1eea",
+          "https://note.com/shikumiya_genki/n/nc5e08ceb0244",
+          "https://note.com/shun_maruoka/n/nf4c5829eafaa",
+          "https://note.com/workmind_jp/n/n856bdeca4f6a",
+          "https://note.com/papajp/n/n3ea5892e873d",
+          "https://note.com/senbikiya/n/nec9b4be9ad98",
+          "https://note.com/ojinokojo/n/n4d8ee8f343a2",
+          "https://note.com/just_letbe/n/nccc9c5f52b85",
+          "https://note.com/takuma9504/n/nb45b4d5e31eb",
+          "https://note.com/pluskanzaki/n/nf9776fc145ce",
+          "https://note.com/manebi_official/n/n80f5076c371f",
+          "https://note.com/yoshimirai/n/n5f8dce007bc7",
+          "https://note.com/mio_change_26/n/nd509f2a8ea30",
+          "https://note.com/masuda_asami/n/n9d4982c4fcd4",
+          "https://note.com/noble_yarrow4431/n/ne08db421abdd",
+          "https://note.com/netbot_jp/n/n1cad9e90591d",
+          "https://note.com/famous_elk8595/n/n00faf14b0e1e",
+          "https://note.com/jinjijitsumu/n/n4398144ca554",
+          "https://note.com/brainy_donkey610/n/n54004afa9338",
+          "https://note.com/sharoshiengineer/n/nfd502b879571",
+          "https://note.com/sas_sroffice/n/n06d527ca1b62",
+          "https://note.com/peak_up/n/n6c7f0ef87440",
+          "https://note.com/kamigakari/n/n3eb514c59729",
+          "https://note.com/aimakerlab/n/nbdda87dfdc3f",
+          "https://note.com/lavorsjsince08/n/n244ce22c8c53",
+          "https://note.com/fujita_legal_ai/n/nd96ca52d2e32",
+          "https://note.com/tender_toad5379/n/n6445219615c4",
+          "https://note.com/minds_2003/n/n49f9e5de1e40",
+          "https://note.com/match11/n/ndd1783f33dce",
+          "https://note.com/right_quoll9367/n/n533bbafeac2a",
+          "https://note.com/jidokalog/n/n9bfcda4f8e82",
+          "https://note.com/safedesk/n/n475e182c9fd2",
+          "https://note.com/massets/n/nb89fe886b3b8"
+        ],
+        "new": [
+          "https://note.com/hatarakuokane/n/nb282504c97b4",
+          "https://note.com/nakei_room/n/nc52ddc22b585",
+          "https://note.com/st_yokoro/n/n9390f8abcbad"
+        ],
+        "disappeared": [
+          "https://note.com/marutto_saiyo/n/n6cd1b4e6efac",
+          "https://note.com/clarity_works/n/n12dd94fb2f3b",
+          "https://note.com/right_viola568/n/nc304a91d7fc9"
+        ]
+      }
     },
     {
       "target_id": "note-article-n7ef133760bff",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/shun_maruoka/n/nf4c5829eafaa",
+          "https://note.com/workmind_jp/n/n856bdeca4f6a",
+          "https://note.com/just_letbe/n/nccc9c5f52b85",
+          "https://note.com/brainy_donkey610/n/n54004afa9338",
+          "https://note.com/shikumiya_genki/n/nc5e08ceb0244",
+          "https://note.com/masuda_asami/n/n9d4982c4fcd4",
+          "https://note.com/manebi_official/n/n80f5076c371f",
+          "https://note.com/pluskanzaki/n/nf9776fc145ce",
+          "https://note.com/papajp/n/n3ea5892e873d",
+          "https://note.com/smallbiz_kit/n/n3ede92b19756",
+          "https://note.com/yoshimirai/n/n5f8dce007bc7",
+          "https://note.com/yuji_ai_tool/n/nbc6c3fda1eea",
+          "https://note.com/netbot_jp/n/n1cad9e90591d",
+          "https://note.com/kamigakari/n/n1321d537be47",
+          "https://note.com/famous_elk8595/n/n00faf14b0e1e",
+          "https://note.com/fujita_legal_ai/n/nd96ca52d2e32",
+          "https://note.com/senbikiya/n/nec9b4be9ad98",
+          "https://note.com/takuma9504/n/nb45b4d5e31eb",
+          "https://note.com/aimakerlab/n/nbdda87dfdc3f",
+          "https://note.com/jinjijitsumu/n/n4398144ca554",
+          "https://note.com/lavorsjsince08/n/n244ce22c8c53",
+          "https://note.com/hot_condor5974/n/na073b1e5ea80",
+          "https://note.com/jimucost_room/n/n62401c471a26",
+          "https://note.com/gay_otter2889/n/nbd47e5f95d59",
+          "https://note.com/japonomics/n/na4115c0c4f99",
+          "https://note.com/syunsaku_asada/n/n0be4fe8650e7",
+          "https://note.com/ojinokojo/n/n4d8ee8f343a2",
+          "https://note.com/cheeky_falcon949/n/neb85937dbf7d",
+          "https://note.com/shiratakioec/n/nde4c499c88cf",
+          "https://note.com/right_quoll9367/n/n7b32e6c1bdff",
+          "https://note.com/hikitsugi_lab/n/n90503cd3b908",
+          "https://note.com/tender_toad5379/n/n6445219615c4",
+          "https://note.com/sharoshiengineer/n/nfd502b879571"
+        ],
+        "new": [
+          "https://note.com/hatarakuokane/n/nb282504c97b4",
+          "https://note.com/mio_change_26/n/nd509f2a8ea30",
+          "https://note.com/genba_jitsumu/n/n9fbbf4532fbb"
+        ],
+        "disappeared": [
+          "https://note.com/safe_gerbil4025/n/nc57f887e03f3",
+          "https://note.com/anzen_ai_jp/n/n4f2c7f1b7794",
+          "https://note.com/marunage_shacho/n/ne958992e2f00"
+        ]
+      }
     },
     {
       "target_id": "note-article-n048878ee7064",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/aaconsulting/n/nfe676864ef57",
+          "https://note.com/cool_rose1483/n/n78c6ddabb5b4",
+          "https://note.com/yutas_dev/n/n80f02f041f1f",
+          "https://note.com/daikidomon/n/nc5b6f41513fd",
+          "https://note.com/ai_create_sho/n/n9fbfe825ab6d",
+          "https://note.com/susumuwork/n/nf8699c533e30",
+          "https://note.com/bold_emu296/n/nc120a22795f2",
+          "https://note.com/yunta_fukurou/n/n99447ef8db43",
+          "https://note.com/ai_gyomu_hojo/n/nd5f605d9c8b5",
+          "https://note.com/mtta61124/n/n871a00b73f20",
+          "https://note.com/anis_no_login/n/n172a087f0d66",
+          "https://note.com/30_nayami_labo/n/n817d55e9f7ca",
+          "https://note.com/ricky2020/n/na507337c6caf",
+          "https://note.com/hakutane/n/n1072ccf1812c",
+          "https://note.com/singularity45/n/n53fdd608623a",
+          "https://note.com/safe_ruff2294/n/ned23c4b755dc",
+          "https://note.com/innoovio/n/nc1e75794173a",
+          "https://note.com/aikenyujo_siroto/n/nc87572448d4c",
+          "https://note.com/kamurogi_lab/n/n5042ed7741f5",
+          "https://note.com/toushi51/n/nfb8851b2c38a",
+          "https://note.com/chodoii_mono/n/nde49cc485fda",
+          "https://note.com/good_nerine619/n/n2e2c4009ce4b",
+          "https://note.com/mute_rue460/n/n8267949b85ed",
+          "https://note.com/dapper_emu3654/n/n9406ade08b38",
+          "https://note.com/safe_gerbil4025/n/nc57f887e03f3",
+          "https://note.com/jirein/n/n4a2f067be2bd",
+          "https://note.com/fukugyo_success/n/n2ceb0efe0966"
+        ],
+        "new": [
+          "https://note.com/webstudio_sinc/n/n35e9e0140d3a",
+          "https://note.com/sirius_terauchi/n/n0068cb376b5f",
+          "https://note.com/akipnote/n/ne50120152800",
+          "https://note.com/scarab611/n/neea7261b3b76",
+          "https://note.com/ai_tamaki/n/n45d93dbba2da",
+          "https://note.com/yamanoji_ai/n/nb408ab977111",
+          "https://note.com/just_letbe/n/nc17022961597",
+          "https://note.com/ebiebi_pg/n/nf3519b5041ee",
+          "https://note.com/zephel01/n/n7fa6564b43cf"
+        ],
+        "disappeared": [
+          "https://note.com/holy_beetle8467/n/nc4e1156ee8e0",
+          "https://note.com/rapid_fowl9873/n/n0c6b3f3af655",
+          "https://note.com/yuusi_912/n/nf48ff131944c",
+          "https://note.com/silver_chimpan/n/nf729a4ed0d2c",
+          "https://note.com/ls_laboratory/n/n3e186daeef82",
+          "https://note.com/yuzulemon1/n/n646c3e5c7a92",
+          "https://style.medpeer.co.jp/n/n4d2b669b6dd4",
+          "https://note.com/fhc_pr/n/n99883ef9c2d9",
+          "https://note.com/naomike/n/ne28b27880760"
+        ]
+      }
     },
     {
       "target_id": "note-article-n4fc7bade511f",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": {
+        "comparison_status": "COMPARABLE",
+        "reason": null,
+        "retained": [
+          "https://note.com/aaconsulting/n/nfe676864ef57",
+          "https://note.com/safe_gerbil4025/n/nc57f887e03f3",
+          "https://note.com/ai_shanai_lab/n/n1e82562232fc",
+          "https://note.com/pyrite_atoz/n/n4fffe4a1fabf",
+          "https://note.com/yutas_dev/n/n80f02f041f1f",
+          "https://note.com/open_knot9715/n/n0a61999df973",
+          "https://note.com/susumuwork/n/nf8699c533e30",
+          "https://note.com/yuzulemon1/n/n646c3e5c7a92",
+          "https://note.com/yunta_fukurou/n/n99447ef8db43",
+          "https://note.com/daikidomon/n/nc5b6f41513fd",
+          "https://note.com/ai_forward_log/n/n97dfa180f9e6",
+          "https://note.com/mtta61124/n/n1c1c1c430380",
+          "https://note.com/soyokaze2/n/nd5616b57b691",
+          "https://note.com/calm_daphne9475/n/naadfc4387471",
+          "https://note.com/kind_lilac615/n/ncf315cb2406b",
+          "https://note.com/genten_kei/n/n9360dbde15ad",
+          "https://note.com/innoovio/n/nc1e75794173a",
+          "https://note.com/fit_snail9195/n/nb8567594a862",
+          "https://note.com/new_pontarou/n/n630e5ca2238c",
+          "https://note.com/jirein/n/nea6e104bdff5",
+          "https://note.com/good_nerine619/n/n2e2c4009ce4b",
+          "https://note.com/selfseed/n/n0e4284d2a2d4",
+          "https://note.com/ai_ceo_john/n/n13794e9e1b3a",
+          "https://note.com/aibuka/n/n1b1a81ffcbe1",
+          "https://note.com/sin2026/n/ndc4ad85b99e5",
+          "https://note.com/aiha_channel357/n/n993d09694a86",
+          "https://note.com/holy_beetle8467/n/ndfdf4a887c6a",
+          "https://note.com/wise_rue7256/n/n5963dcf9ffe3",
+          "https://note.com/30_nayami_labo/n/n817d55e9f7ca",
+          "https://note.com/shiodome_098/n/n99ad2939d9c7",
+          "https://note.com/r2_pc_ai/n/n5c396ed3cde7"
+        ],
+        "new": [
+          "https://note.com/scarab611/n/neea7261b3b76",
+          "https://note.com/kozo_ai_company/n/ne0276be29e8a",
+          "https://note.com/magic_ai7978/n/na9eaf1fe3980",
+          "https://note.com/jimucost_room/n/n641b60c8dd64",
+          "https://note.com/tm_blog/n/ne640f9bd5f28"
+        ],
+        "disappeared": [
+          "https://note.com/jimucost_room/n/n62401c471a26",
+          "https://note.com/famous_crow6980/n/na2cf796e54a0",
+          "https://note.com/ai_shoryoku_lab/n/n9cb63088355a",
+          "https://note.com/masamasa11_12/n/nc565b0e7520d",
+          "https://note.com/dora_e_m/n/n53db9ec043b5"
+        ]
+      }
     },
     {
       "target_id": "booth-shop",
-      "status": "NEW_TARGET"
+      "status": "EXISTING_TARGET",
+      "capture_status_changed": false,
+      "recommendation": null
     }
   ]
 }
