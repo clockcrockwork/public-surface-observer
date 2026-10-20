@@ -8,8 +8,8 @@ on:
       - 'config/**'
       - 'package.json'
       - '.github/workflows/observe.yml'
-  schedule:
-    - cron: '17 4 * * 3'
+  # Weekly schedule paused pending task #40 audit. Manual dispatch and
+  # path-filtered push remain available. Restore only after failure triage.
   workflow_dispatch:
     inputs:
       scope:
