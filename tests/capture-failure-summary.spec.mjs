@@ -14,6 +14,15 @@ test('keeps diagnostic identifiers and reasons bounded and secret-free', () => {
         },
       },
     },
+    {
+      target_id: 'booth-shop',
+      viewports: {
+        desktop: {
+          capture_status: 'RENDER_INCOMPLETE',
+          error: 'net::ERR_CONNECTION_RESET at https://booth.pm/private?key=secret',
+        },
+      },
+    },
   ])
 
   expect(summary).toEqual([
@@ -24,8 +33,15 @@ test('keeps diagnostic identifiers and reasons bounded and secret-free', () => {
       status: 'RENDER_INCOMPLETE',
       reason: 'render_incomplete',
     },
+    {
+      target_id: 'booth-shop',
+      viewport: 'desktop',
+      classification: 'CAPTURE',
+      status: 'RENDER_INCOMPLETE',
+      reason: 'network_ERR_CONNECTION_RESET',
+    },
   ])
-  expect(JSON.stringify(summary).length).toBeLessThan(200)
+  expect(JSON.stringify(summary).length).toBeLessThan(400)
   expect(JSON.stringify(summary)).not.toMatch(/https?:|note\.com|secret|private/)
 })
 
