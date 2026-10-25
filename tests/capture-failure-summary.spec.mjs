@@ -114,3 +114,37 @@ test('emits diagnostics without changing blocked exit or production persist gate
   )
   expect(workflow).toContain('npm run observe -- --scope "$SCOPE" --persist')
 })
+
+test('does not echo an unrecognized ERR token embedded in an error URL', () => {
+  const summary = summarizeCaptureFailures([
+    {
+      target_id: 'note-article-private',
+      viewports: {
+        desktop: {
+          capture_status: 'RENDER_INCOMPLETE',
+          error: 'navigation failed at https://private.example/ERR_PRIVATE_TOKEN?access_token=secret',
+        },
+      },
+    },
+  ])
+
+  expect(summary).toEqual([
+    {
+      target_id: 'note-article-private',
+      viewport: 'desktop',
+      classification: 'CAPTURE',
+      status: 'RENDER_INCOMPLETE',
+      reason: 'render_incomplete',
+    },
+  ])
+  expect(JSON.stringify(summary)).not.toMatch(/ERR_PRIVATE_TOKEN|private\\.example|secret/)
+})
+
+test('does not throw on null or malformed capture collections', () => {
+  const malformed = [null, {}, { target_id: 'x', viewports: null }, { target_id: 'x', viewports: { desktop: null } }]
+
+  expect(() => summarizeCaptureFailures(null)).not.toThrow()
+  expect(() => summarizeCaptureFailures(malformed)).not.toThrow()
+  expect(summarizeCaptureFailures(null)).toEqual([])
+  expect(summarizeCaptureFailures(malformed)).toEqual([])
+})

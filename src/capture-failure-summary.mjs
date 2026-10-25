@@ -5,6 +5,25 @@ const CAPTURE_STATUSES = new Set([
   'HTTP_ERROR',
   'RENDER_INCOMPLETE',
 ])
+const NETWORK_ERROR_CODES = new Set([
+  'ERR_ABORTED',
+  'ERR_ADDRESS_UNREACHABLE',
+  'ERR_BLOCKED_BY_CLIENT',
+  'ERR_CERT_AUTHORITY_INVALID',
+  'ERR_CERT_COMMON_NAME_INVALID',
+  'ERR_CONNECTION_CLOSED',
+  'ERR_CONNECTION_REFUSED',
+  'ERR_CONNECTION_RESET',
+  'ERR_CONNECTION_TIMED_OUT',
+  'ERR_EMPTY_RESPONSE',
+  'ERR_HTTP2_PROTOCOL_ERROR',
+  'ERR_INTERNET_DISCONNECTED',
+  'ERR_NAME_NOT_RESOLVED',
+  'ERR_NETWORK_CHANGED',
+  'ERR_SSL_PROTOCOL_ERROR',
+  'ERR_TIMED_OUT',
+  'ERR_TUNNEL_CONNECTION_FAILED',
+])
 
 function safeTargetId(value) {
   if (typeof value === 'string' && value.length <= 128 && /^[A-Za-z0-9_-]+$/.test(value)) {
@@ -24,7 +43,7 @@ function captureReason(viewport) {
   if (status === 'TIMEOUT') return 'navigation_timeout'
 
   const networkCode = typeof error === 'string' ? error.match(/\bERR_[A-Z0-9_]{1,64}\b/)?.[0] : null
-  return networkCode ? `network_${networkCode}` : 'render_incomplete'
+  return NETWORK_ERROR_CODES.has(networkCode) ? `network_${networkCode}` : 'render_incomplete'
 }
 
 function recommendationReason(viewport) {
@@ -40,12 +59,12 @@ function recommendationReason(viewport) {
 
 export function summarizeCaptureFailures(captures) {
   const summary = []
-  for (const capture of captures) {
+  for (const capture of Array.isArray(captures) ? captures : []) {
     const targetId = safeTargetId(capture?.target_id)
 
     for (const viewportName of VIEWPORTS) {
-      const viewport = capture.viewports?.[viewportName]
-      if (!viewport) continue
+      const viewport = capture?.viewports?.[viewportName]
+      if (!viewport || typeof viewport !== 'object') continue
 
       const status = viewport.capture_status
       if (CAPTURE_STATUSES.has(status)) {
