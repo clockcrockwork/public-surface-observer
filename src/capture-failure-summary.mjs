@@ -6,6 +6,13 @@ const CAPTURE_STATUSES = new Set([
   'RENDER_INCOMPLETE',
 ])
 
+function safeTargetId(value) {
+  if (typeof value === 'string' && value.length <= 128 && /^[A-Za-z0-9_-]+$/.test(value)) {
+    return value
+  }
+  return 'unknown-target'
+}
+
 function captureReason(viewport) {
   const { capture_status: status, http_status: httpStatus, error } = viewport
   if (status === 'HTTP_ERROR' && Number.isInteger(httpStatus)) return `HTTP_${httpStatus}`
@@ -16,7 +23,7 @@ function captureReason(viewport) {
   }
   if (status === 'TIMEOUT') return 'navigation_timeout'
 
-  const networkCode = typeof error === 'string' ? error.match(/\bERR_[A-Z0-9_]+\b/)?.[0] : null
+  const networkCode = typeof error === 'string' ? error.match(/\bERR_[A-Z0-9_]{1,64}\b/)?.[0] : null
   return networkCode ? `network_${networkCode}` : 'render_incomplete'
 }
 
@@ -34,7 +41,7 @@ function recommendationReason(viewport) {
 export function summarizeCaptureFailures(captures) {
   const summary = []
   for (const capture of captures) {
-    if (typeof capture?.target_id !== 'string') continue
+    const targetId = safeTargetId(capture?.target_id)
 
     for (const viewportName of VIEWPORTS) {
       const viewport = capture.viewports?.[viewportName]
@@ -43,7 +50,7 @@ export function summarizeCaptureFailures(captures) {
       const status = viewport.capture_status
       if (CAPTURE_STATUSES.has(status)) {
         summary.push({
-          target_id: capture.target_id,
+          target_id: targetId,
           viewport: viewportName,
           classification: 'CAPTURE',
           status,
@@ -54,7 +61,7 @@ export function summarizeCaptureFailures(captures) {
       const reason = recommendationReason(viewport)
       if (reason) {
         summary.push({
-          target_id: capture.target_id,
+          target_id: targetId,
           viewport: viewportName,
           classification: 'RECOMMENDATION_COLLECTION',
           status: 'COLLECTION_FAILED',
