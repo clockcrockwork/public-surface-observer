@@ -27,6 +27,7 @@ import {
   recommendationFailureStage,
 } from './recommendation-probe.mjs'
 import { assertNoManagedIdentityLeak, publicTargetFromCapture } from './public-output.mjs'
+import { summarizeCaptureFailures } from './capture-failure-summary.mjs'
 
 const REPO_ROOT = fileURLToPath(new URL('..', import.meta.url))
 const LATEST_DIR = resolve(REPO_ROOT, 'latest')
@@ -516,6 +517,11 @@ async function main() {
 
     console.log(`Observation ${manifest.status}: ${publicTargets.length} targets`)
     console.log(summary)
+    const captureDiagnostics = summarizeCaptureFailures(captures)
+    if (captureDiagnostics.length > 0) {
+      console.log('Capture diagnostics (sanitized):')
+      for (const diagnostic of captureDiagnostics) console.log(JSON.stringify(diagnostic))
+    }
     if (publicTargets.some((target) => target.capture_status === 'BLOCKED_OR_CHALLENGED')) {
       process.exitCode = 2
     }
