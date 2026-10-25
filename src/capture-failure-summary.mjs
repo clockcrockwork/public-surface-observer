@@ -16,7 +16,7 @@ function captureReason(viewport) {
   }
   if (status === 'TIMEOUT') return 'navigation_timeout'
 
-  const networkCode = typeof error === 'string' ? error.match(/\\bERR_[A-Z0-9_]+\\b/)?.[0] : null
+  const networkCode = typeof error === 'string' ? error.match(/\bERR_[A-Z0-9_]+\b/)?.[0] : null
   return networkCode ? `network_${networkCode}` : 'render_incomplete'
 }
 
