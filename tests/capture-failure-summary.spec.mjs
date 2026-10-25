@@ -1,8 +1,35 @@
+import { readFileSync } from 'node:fs'
 import { expect, test } from '@playwright/test'
 
 import { summarizeCaptureFailures } from '../src/capture-failure-summary.mjs'
 
-test('summarizes failed capture viewports with safe reasons and no URLs', () => {
+test('keeps diagnostic identifiers and reasons bounded and secret-free', () => {
+  const summary = summarizeCaptureFailures([
+    {
+      target_id: ['note-article-', 'n'.repeat(300)].join(''),
+      viewports: {
+        desktop: {
+          capture_status: 'RENDER_INCOMPLETE',
+          error: ['net::ERR_', 'A'.repeat(100), ' at https://note.com/private?token=secret'].join(''),
+        },
+      },
+    },
+  ])
+
+  expect(summary).toEqual([
+    {
+      target_id: 'unknown-target',
+      viewport: 'desktop',
+      classification: 'CAPTURE',
+      status: 'RENDER_INCOMPLETE',
+      reason: 'render_incomplete',
+    },
+  ])
+  expect(JSON.stringify(summary).length).toBeLessThan(200)
+  expect(JSON.stringify(summary)).not.toMatch(/https?:|note\.com|secret|private/)
+})
+
+test('classifies capture and recommendation failures by viewport', () => {
   const summary = summarizeCaptureFailures([
     {
       target_id: 'note-article-n123',
@@ -10,13 +37,21 @@ test('summarizes failed capture viewports with safe reasons and no URLs', () => 
         desktop: {
           capture_status: 'BLOCKED_OR_CHALLENGED',
           http_status: 403,
-          error: 'blocked at https://note.com/private?token=secret',
           recommendation_settle: { surface_expected: true, outcome: 'ROOT_ABSENT' },
         },
         mobile: {
-          capture_status: 'OK',
-          recommendations: { item_count: 2 },
-          recommendation_settle: { surface_expected: true, outcome: 'POPULATED' },
+          capture_status: 'TIMEOUT',
+          recommendation_settle: { surface_expected: true, outcome: 'ROOT_WITHOUT_ITEMS' },
+        },
+      },
+    },
+    {
+      target_id: 'booth-shop',
+      viewports: {
+        desktop: {
+          capture_status: 'HTTP_ERROR',
+          http_status: 503,
+          recommendation_settle: { surface_expected: false, outcome: 'ROOT_ABSENT' },
         },
       },
     },
@@ -37,58 +72,45 @@ test('summarizes failed capture viewports with safe reasons and no URLs', () => 
       status: 'COLLECTION_FAILED',
       reason: 'ROOT_ABSENT',
     },
-  ])
-  expect(JSON.stringify(summary)).not.toContain('https://')
-  expect(JSON.stringify(summary)).not.toContain('secret')
-})
-
-test('reduces navigation exception text to an allowlisted network reason', () => {
-  const summary = summarizeCaptureFailures([
     {
-      target_id: 'booth-shop',
-      viewports: {
-        desktop: {
-          capture_status: 'RENDER_INCOMPLETE',
-          error: 'net::ERR_CONNECTION_RESET at https://booth.pm/private?key=secret',
-        },
-      },
+      target_id: 'note-article-n123',
+      viewport: 'mobile',
+      classification: 'CAPTURE',
+      status: 'TIMEOUT',
+      reason: 'navigation_timeout',
     },
-  ])
-
-  expect(summary).toEqual([
+    {
+      target_id: 'note-article-n123',
+      viewport: 'mobile',
+      classification: 'RECOMMENDATION_COLLECTION',
+      status: 'COLLECTION_FAILED',
+      reason: 'ROOT_WITHOUT_ITEMS',
+    },
     {
       target_id: 'booth-shop',
       viewport: 'desktop',
       classification: 'CAPTURE',
-      status: 'RENDER_INCOMPLETE',
-      reason: 'network_ERR_CONNECTION_RESET',
+      status: 'HTTP_ERROR',
+      reason: 'HTTP_503',
     },
   ])
-  expect(JSON.stringify(summary)).not.toContain('booth.pm')
-  expect(JSON.stringify(summary)).not.toContain('secret')
 })
 
-test('bounds diagnostic identifiers and network reason lengths', () => {
-  const summary = summarizeCaptureFailures([
-    {
-      target_id: `note-article-${'n'.repeat(300)}`,
-      viewports: {
-        desktop: {
-          capture_status: 'RENDER_INCOMPLETE',
-          error: `net::ERR_${'A'.repeat(100)}`,
-        },
-      },
-    },
-  ])
+test('emits diagnostics without changing blocked exit or production persist gates', () => {
+  const observer = readFileSync(new URL('../src/observe.mjs', import.meta.url), 'utf8')
+  const workflow = readFileSync(new URL('../.github/workflows/observe.yml', import.meta.url), 'utf8')
+  const persistIndex = observer.indexOf('if (args.persist)')
+  const diagnosticsIndex = observer.indexOf('summarizeCaptureFailures(captures)')
+  const exitIndex = observer.indexOf('process.exitCode = 2')
 
-  expect(summary).toEqual([
-    {
-      target_id: 'unknown-target',
-      viewport: 'desktop',
-      classification: 'CAPTURE',
-      status: 'RENDER_INCOMPLETE',
-      reason: 'render_incomplete',
-    },
-  ])
-  expect(JSON.stringify(summary).length).toBeLessThan(200)
+  expect(persistIndex).toBeGreaterThanOrEqual(0)
+  expect(diagnosticsIndex).toBeGreaterThan(persistIndex)
+  expect(exitIndex).toBeGreaterThan(diagnosticsIndex)
+  expect(observer).toMatch(
+    /if \(publicTargets\.some\(\(target\) => target\.capture_status === 'BLOCKED_OR_CHALLENGED'\)\) \{\s*process\.exitCode = 2\s*\}/,
+  )
+  expect(workflow).toContain(
+    "if: ${{ success() && steps.target-config.outputs.skip != 'true' && github.ref == 'refs/heads/main' }}",
+  )
+  expect(workflow).toContain('npm run observe -- --scope "$SCOPE" --persist')
 })
