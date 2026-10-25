@@ -67,3 +67,28 @@ test('reduces navigation exception text to an allowlisted network reason', () =>
   expect(JSON.stringify(summary)).not.toContain('booth.pm')
   expect(JSON.stringify(summary)).not.toContain('secret')
 })
+
+test('bounds diagnostic identifiers and network reason lengths', () => {
+  const summary = summarizeCaptureFailures([
+    {
+      target_id: `note-article-${'n'.repeat(300)}`,
+      viewports: {
+        desktop: {
+          capture_status: 'RENDER_INCOMPLETE',
+          error: `net::ERR_${'A'.repeat(100)}`,
+        },
+      },
+    },
+  ])
+
+  expect(summary).toEqual([
+    {
+      target_id: 'unknown-target',
+      viewport: 'desktop',
+      classification: 'CAPTURE',
+      status: 'RENDER_INCOMPLETE',
+      reason: 'render_incomplete',
+    },
+  ])
+  expect(JSON.stringify(summary).length).toBeLessThan(200)
+})
