@@ -131,6 +131,58 @@ test('emits diagnostics without changing blocked exit or production persist gate
   expect(workflow).toContain('npm run observe -- --scope "$SCOPE" --persist')
 })
 
+test('does not confuse capture exceptions with HTTP response errors', () => {
+  const summary = summarizeCaptureFailures([
+    {
+      target_id: 'note-article-n123',
+      viewports: {
+        desktop: {
+          capture_status: 'HTTP_ERROR',
+          http_status: 200,
+          error: 'page.screenshot: Target closed at https://note.com/private?access_token=secret',
+        },
+        mobile: {
+          capture_status: 'HTTP_ERROR',
+          http_status: 200,
+          error: 'net::ERR_CONNECTION_RESET at https://note.com/private?access_token=secret',
+        },
+      },
+    },
+    {
+      target_id: 'booth-product-123',
+      viewports: {
+        desktop: {
+          capture_status: 'HTTP_ERROR',
+          http_status: null,
+          error: 'Target page closed',
+        },
+        mobile: {
+          capture_status: 'HTTP_ERROR',
+          http_status: 503,
+        },
+      },
+    },
+    {
+      target_id: 'booth-shop',
+      viewports: {
+        desktop: {
+          capture_status: 'BLOCKED_OR_CHALLENGED',
+          http_status: 200,
+        },
+      },
+    },
+  ])
+
+  expect(summary.map(({ reason }) => reason)).toEqual([
+    'capture_exception',
+    'network_ERR_CONNECTION_RESET',
+    'capture_exception',
+    'HTTP_503',
+    'challenge_or_access_denied',
+  ])
+  expect(JSON.stringify(summary)).not.toMatch(/HTTP_200|note\.com|access_token|secret|private/)
+})
+
 test('does not echo an unrecognized ERR token embedded in an error URL', () => {
   const summary = summarizeCaptureFailures([
     {
