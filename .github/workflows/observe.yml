@@ -27,17 +27,17 @@ permissions:
   contents: write
 
 env:
-  NODE_VERSION: '22'
+  NODE_VERSION: '22.23.4'
 
 jobs:
   observe:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
     concurrency:
       group: public-surface-observer-managed
       cancel-in-progress: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 1
 
@@ -55,7 +55,7 @@ jobs:
           fi
           echo "skip=false" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.target-config.outputs.skip != 'true'
         with:
           node-version: ${{ env.NODE_VERSION }}
