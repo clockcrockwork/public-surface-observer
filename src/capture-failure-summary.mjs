@@ -34,16 +34,17 @@ function safeTargetId(value) {
 
 function captureReason(viewport) {
   const { capture_status: status, http_status: httpStatus, error } = viewport
-  if (status === 'HTTP_ERROR' && Number.isInteger(httpStatus)) return `HTTP_${httpStatus}`
+  const hasHttpErrorStatus = Number.isInteger(httpStatus) && httpStatus >= 400 && httpStatus <= 599
+
+  if (status === 'HTTP_ERROR' && hasHttpErrorStatus) return `HTTP_${httpStatus}`
   if (status === 'BLOCKED_OR_CHALLENGED') {
-    return Number.isInteger(httpStatus) && httpStatus >= 400
-      ? `HTTP_${httpStatus}`
-      : 'challenge_or_access_denied'
+    return hasHttpErrorStatus ? `HTTP_${httpStatus}` : 'challenge_or_access_denied'
   }
   if (status === 'TIMEOUT') return 'navigation_timeout'
 
   const networkCode = typeof error === 'string' ? error.match(/\bERR_[A-Z0-9_]{1,64}\b/)?.[0] : null
-  return NETWORK_ERROR_CODES.has(networkCode) ? `network_${networkCode}` : 'render_incomplete'
+  if (NETWORK_ERROR_CODES.has(networkCode)) return `network_${networkCode}`
+  return status === 'HTTP_ERROR' ? 'capture_exception' : 'render_incomplete'
 }
 
 function recommendationReason(viewport) {
