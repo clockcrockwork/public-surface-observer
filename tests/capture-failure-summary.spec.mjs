@@ -93,7 +93,7 @@ test('classifies capture and recommendation failures by viewport', () => {
       viewport: 'mobile',
       classification: 'CAPTURE',
       status: 'TIMEOUT',
-      reason: 'navigation_timeout',
+      reason: 'capture_timeout',
     },
     {
       target_id: 'note-article-n123',
@@ -206,6 +206,39 @@ test('does not echo an unrecognized ERR token embedded in an error URL', () => {
     },
   ])
   expect(JSON.stringify(summary)).not.toMatch(/ERR_PRIVATE_TOKEN|private\\.example|secret/)
+})
+
+test('does not classify an allowlisted code found only in a URL as a network error', () => {
+  const summary = summarizeCaptureFailures([
+    {
+      target_id: 'note-article-n123',
+      viewports: {
+        desktop: {
+          capture_status: 'RENDER_INCOMPLETE',
+          error: 'page.screenshot: Target closed at https://private.example/ERR_CONNECTION_RESET?token=secret',
+        },
+      },
+    },
+  ])
+
+  expect(summary.map(({ reason }) => reason)).toEqual(['render_incomplete'])
+  expect(JSON.stringify(summary)).not.toMatch(/https?:|private\.example|secret/)
+})
+
+test('uses a phase-neutral reason for screenshot timeout diagnostics', () => {
+  const summary = summarizeCaptureFailures([
+    {
+      target_id: 'note-article-n123',
+      viewports: {
+        desktop: {
+          capture_status: 'TIMEOUT',
+          error: 'page.screenshot: Timeout 30000ms exceeded',
+        },
+      },
+    },
+  ])
+
+  expect(summary.map(({ reason }) => reason)).toEqual(['capture_timeout'])
 })
 
 test('does not throw on null or malformed capture collections', () => {
