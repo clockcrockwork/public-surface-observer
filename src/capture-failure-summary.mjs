@@ -40,9 +40,9 @@ function captureReason(viewport) {
   if (status === 'BLOCKED_OR_CHALLENGED') {
     return hasHttpErrorStatus ? `HTTP_${httpStatus}` : 'challenge_or_access_denied'
   }
-  if (status === 'TIMEOUT') return 'navigation_timeout'
+  if (status === 'TIMEOUT') return 'capture_timeout'
 
-  const networkCode = typeof error === 'string' ? error.match(/\bERR_[A-Z0-9_]{1,64}\b/)?.[0] : null
+  const networkCode = typeof error === 'string' ? error.match(/\bnet::(ERR_[A-Z0-9_]{1,64})\b/)?.[1] : null
   if (NETWORK_ERROR_CODES.has(networkCode)) return `network_${networkCode}`
   return status === 'HTTP_ERROR' ? 'capture_exception' : 'render_incomplete'
 }
