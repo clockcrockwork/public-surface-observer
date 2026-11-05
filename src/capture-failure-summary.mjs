@@ -42,7 +42,9 @@ function captureReason(viewport) {
   }
   if (status === 'TIMEOUT') return 'capture_timeout'
 
-  const networkCode = typeof error === 'string' ? error.match(/\bnet::(ERR_[A-Z0-9_]{1,64})\b/)?.[1] : null
+  const urlStart = typeof error === 'string' ? error.search(/\bhttps?:\/\//i) : -1
+  const errorPrefix = typeof error === 'string' ? (urlStart < 0 ? error : error.slice(0, urlStart)) : ''
+  const networkCode = errorPrefix.match(/\bnet::(ERR_[A-Z0-9_]{1,64})\b/)?.[1] ?? null
   if (NETWORK_ERROR_CODES.has(networkCode)) return `network_${networkCode}`
   return status === 'HTTP_ERROR' ? 'capture_exception' : 'render_incomplete'
 }
