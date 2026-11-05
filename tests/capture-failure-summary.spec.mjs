@@ -219,9 +219,18 @@ test('does not classify an allowlisted code found only in a URL as a network err
         },
       },
     },
+    {
+      target_id: 'note-article-n456',
+      viewports: {
+        desktop: {
+          capture_status: 'RENDER_INCOMPLETE',
+          error: 'page.screenshot: Target closed at https://private.example/net::ERR_CONNECTION_RESET?token=secret',
+        },
+      },
+    },
   ])
 
-  expect(summary.map(({ reason }) => reason)).toEqual(['render_incomplete'])
+  expect(summary.map(({ reason }) => reason)).toEqual(['render_incomplete', 'render_incomplete'])
   expect(JSON.stringify(summary)).not.toMatch(/https?:|private\.example|secret/)
 })
 
