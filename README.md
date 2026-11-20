@@ -45,7 +45,7 @@ It is a bounded anonymous observation, not proof of a platform's internal catego
 
 `config/seeds.yaml` contains disabled examples only.
 
-Scheduled managed targets are supplied at runtime through the GitHub Actions repository secret:
+Managed targets for Actions runs are supplied at runtime through the GitHub Actions repository secret:
 
 ```text
 OBSERVER_SEEDS_YAML
@@ -105,6 +105,10 @@ latest/summary.md
 
 The workflow does not upload the detailed `artifacts/run-*` directory from this public repository.
 
-## Schedule
+## Managed Actions runs
 
-`.github/workflows/observe.yml` is scheduled for **Wednesday 04:17 UTC / 13:17 JST**, before the downstream weekly analysis window. If `OBSERVER_SEEDS_YAML` is not configured, the scheduled job exits without overwriting `latest/` with an empty observation.
+The weekly scheduled trigger is paused; `.github/workflows/observe.yml` has no schedule configured. Managed observations can still start manually through `workflow_dispatch`, or on pushes to `main` that change `src/**`, `config/**`, `package.json`, or `.github/workflows/observe.yml`.
+
+Before capture, the workflow checks the `OBSERVER_SEEDS_YAML` repository secret. If it is not configured, the run skips observation and leaves `latest/` unchanged.
+
+A successful persisted run replaces `latest/manifest.json`, `latest/diff.json`, and `latest/summary.md` with that run's snapshot. A manual run with a limited scope (`note`, `booth`, or `seed-only`) therefore leaves `latest/` containing only the selected scope; it does not merge the previous snapshot into the new one.
